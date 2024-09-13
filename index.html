@@ -83,7 +83,7 @@
                 <p>Interested in collaborating or have questions? Reach out!</p>
                 <div class="split style1">
                     <section>
-                        <form method="post" action="#">
+                        <form method="post" action="https://formspree.io/f/xzzpqgpl" id="contact-form">
                             <div class="fields">
                                 <div class="field half">
                                     <label for="name">Name</label>
@@ -125,6 +125,47 @@
         </section>
 
     </div>
+
+    <script>
+    var form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var button = form.querySelector('input[type="submit"]');
+        var originalButtonText = button.value;
+        button.value = 'Sending...';
+        button.disabled = true;
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                form.reset();
+                button.value = 'Message Sent! :)';
+                setTimeout(() => {
+                    button.value = originalButtonText;
+                    button.disabled = false;
+                }, 3000);
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert("Oops! There was a problem submitting your form");
+                    }
+                    button.value = originalButtonText;
+                    button.disabled = false;
+                })
+            }
+        }).catch(error => {
+            alert("Oops! There was a problem submitting your form");
+            button.value = originalButtonText;
+            button.disabled = false;
+        });
+    });
+</script>
 
     <!-- Footer -->
     <footer id="footer" class="wrapper style1-alt">
