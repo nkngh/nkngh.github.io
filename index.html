@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
     <title>Nick's Ambient Soundscapes</title>
     <meta charset="utf-8" />
@@ -7,100 +7,139 @@
     <link rel="stylesheet" href="css/main.css" />
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 </head>
-<body>
-    <div id="sidebar">
+<body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
         <div class="inner">
             <nav>
-                <a href="#intro">Welcome</a>
-                <a href="#one">Featured Tracks</a>
-                <a href="#two">Services</a>
-                <a href="#three">Get in touch</a>
+                <ul>
+                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#one">Featured Tracks</a></li>
+                    <li><a href="#two">Services</a></li>
+                    <li><a href="#three">Get in touch</a></li>
+                </ul>
             </nav>
         </div>
-    </div>
+    </section>
 
+    <!-- Wrapper -->
     <div id="wrapper">
-        <section id="intro" class="section">
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
                 <h1>Nick's Ambient Soundscapes</h1>
                 <p>Welcome to my world of ambient and lofi music. Immerse yourself in serene soundscapes designed to relax, focus, and inspire.</p>
-                <a href="#one" class="button">Explore My Music</a>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">Learn more</a></li>
+                </ul>
             </div>
         </section>
 
-        <section id="one" class="section spotlights">
-            <div class="inner">
-                <h2>Featured Tracks</h2>
-                <div class="spotlight">
-                    <img src="/api/placeholder/400/300" alt="Tranquil Waves" class="image" />
-                    <div class="content">
-                        <h3>Tranquil Waves</h3>
-                        <p>A soothing composition inspired by gentle ocean waves, perfect for relaxation and meditation.</p>
-                        <audio controls>
-                            <source src="path_to_your_audio_file.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
+        <!-- One -->
+        <section id="one" class="wrapper style2 spotlights">
+            <section>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Featured Track: Serenity</h2>
+                        <p>A calm, soothing composition perfect for meditation and relaxation.</p>
+                        <ul class="actions">
+                            <li><a href="#" class="button">Listen</a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Add more spotlight sections for other tracks -->
-            </div>
+            </section>
+            <!-- Add more featured tracks as needed -->
         </section>
 
-        <section id="two" class="section">
+        <!-- Two -->
+        <section id="two" class="wrapper style3 fade-up">
             <div class="inner">
                 <h2>Services</h2>
+                <p>From custom compositions to licensing, explore how we can collaborate.</p>
                 <div class="features">
-                    <div class="feature">
-                        <h3>Custom Ambient Tracks</h3>
-                        <p>Tailored ambient compositions for your specific needs, whether it's for meditation apps, film scoring, or personal use.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Lofi Production</h3>
-                        <p>Chill, relaxing lofi beats perfect for studying, working, or unwinding after a long day.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>Soundscape Design</h3>
-                        <p>Immersive audio environments designed to enhance spatial experiences or virtual reality applications.</p>
-                    </div>
+                    <section>
+                        <span class="icon solid major fa-code"></span>
+                        <h3>Custom Compositions</h3>
+                        <p>Tailored ambient tracks for your specific needs.</p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-lock"></span>
+                        <h3>Licensing</h3>
+                        <p>License existing tracks for your projects.</p>
+                    </section>
+                    <!-- Add more services as needed -->
                 </div>
             </div>
         </section>
 
-        <section id="three" class="section">
+        <!-- Three -->
+        <section id="three" class="wrapper style1 fade-up">
             <div class="inner">
                 <h2>Get in touch</h2>
-                <p>Interested in collaborating or commissioning a custom track? Reach out to me!</p>
-                <form>
-                    <div class="fields">
-                        <div class="field half">
-                            <input type="text" name="name" id="name" placeholder="Name" />
-                        </div>
-                        <div class="field half">
-                            <input type="email" name="email" id="email" placeholder="Email" />
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="button primary" /></li>
-                    </ul>
-                </form>
+                <p>Interested in collaborating or have questions? Reach out!</p>
+                <div class="split style1">
+                    <section>
+                        <form method="post" action="#">
+                            <div class="fields">
+                                <div class="field half">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" />
+                                </div>
+                                <div class="field half">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" />
+                                </div>
+                                <div class="field">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <ul class="actions">
+                                <li><a href="" class="button submit">Send Message</a></li>
+                            </ul>
+                        </form>
+                    </section>
+                    <section>
+                        <ul class="contact">
+                            <li>
+                                <h3>Email</h3>
+                                <a href="#">info@nicksambient.com</a>
+                            </li>
+                            <li>
+                                <h3>Social</h3>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
+
     </div>
 
-    <footer>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
-            <p>&copy; Nick's Ambient Soundscapes. All rights reserved.</p>
+            <ul class="menu">
+                <li>&copy; Nick's Ambient Soundscapes. All rights reserved.</li>
+            </ul>
         </div>
     </footer>
-            <script src="js/jquery.min.js"></script>
-            <script src="js/jquery.scrollex.min.js"></script>
-            <script src="js/jquery.scrolly.min.js"></script>
-            <script src="js/browser.min.js"></script>
-            <script src="js/breakpoints.min.js"></script>
-            <script src="js/util.js"></script>
-            <script src="js/main.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
