@@ -1,93 +1,163 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nick's Ambient Soundscapes</title>
     <style>
+        :root {
+            --eggshell: #f4f1de;
+            --burnt-sienna: #e07a5f;
+            --delft-blue: #3d405b;
+            --cambridge-blue: #81b29a;
+            --sunset: #f2cc8f;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 0.5rem;
-        }
-        nav ul {
+            color: var(--delft-blue);
+            background-color: var(--eggshell);
+            margin: 0;
             padding: 0;
-            list-style: none;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
+        #sidebar {
+            background-color: var(--delft-blue);
+            color: var(--eggshell);
+            padding: 2rem;
+            position: fixed;
+            height: 100%;
+            width: 200px;
         }
-        nav ul li a {
-            color: #ffffff;
+        #sidebar .inner {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #sidebar a {
+            color: var(--eggshell);
             text-decoration: none;
+            padding: 0.5rem 0;
         }
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
+        #wrapper {
+            margin-left: 200px;
+            padding: 2rem;
         }
-        .btn {
+        .section {
+            margin-bottom: 3rem;
+        }
+        h1, h2 {
+            color: var(--burnt-sienna);
+        }
+        .button {
             display: inline-block;
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 20px;
+            background-color: var(--cambridge-blue);
+            color: var(--eggshell);
+            padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 5px;
+        }
+        .spotlights .image {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: var(--delft-blue);
+            color: var(--eggshell);
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Nick's Ambient Soundscapes</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <h2>Welcome to Nick's Ambient Soundscapes</h2>
-            <p>Crafting serene audio experiences for meditation, relaxation, and mindfulness apps.</p>
+    <div id="sidebar">
+        <div class="inner">
+            <nav>
+                <a href="#intro">Welcome</a>
+                <a href="#one">Featured Tracks</a>
+                <a href="#two">Services</a>
+                <a href="#three">Get in touch</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <section id="intro" class="section">
+            <div class="inner">
+                <h1>Nick's Ambient Soundscapes</h1>
+                <p>Welcome to my world of ambient and lofi music. Immerse yourself in serene soundscapes designed to relax, focus, and inspire.</p>
+                <a href="#one" class="button">Explore My Music</a>
+            </div>
         </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Listen to samples of my work:</p>
-            <!-- Add audio player or links to your tracks here -->
+
+        <section id="one" class="section spotlights">
+            <div class="inner">
+                <h2>Featured Tracks</h2>
+                <div class="spotlight">
+                    <img src="/api/placeholder/400/300" alt="Tranquil Waves" class="image" />
+                    <div class="content">
+                        <h3>Tranquil Waves</h3>
+                        <p>A soothing composition inspired by gentle ocean waves, perfect for relaxation and meditation.</p>
+                        <audio controls>
+                            <source src="path_to_your_audio_file.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+                <!-- Add more spotlight sections for other tracks -->
+            </div>
         </section>
-        <section id="services">
-            <h2>Services</h2>
-            <ul>
-                <li>Custom ambient tracks for meditation apps</li>
-                <li>Relaxation soundscapes for wellness platforms</li>
-                <li>Sleep-inducing audio for health applications</li>
-            </ul>
+
+        <section id="two" class="section">
+            <div class="inner">
+                <h2>Services</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Custom Ambient Tracks</h3>
+                        <p>Tailored ambient compositions for your specific needs, whether it's for meditation apps, film scoring, or personal use.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Lofi Production</h3>
+                        <p>Chill, relaxing lofi beats perfect for studying, working, or unwinding after a long day.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Soundscape Design</h3>
+                        <p>Immersive audio environments designed to enhance spatial experiences or virtual reality applications.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Interested in working together? Contact me at:</p>
-            <p>Email: nick@ambientsoundscapes.com</p>
-            <a href="mailto:nick@ambientsoundscapes.com" class="btn">Send Email</a>
+
+        <section id="three" class="section">
+            <div class="inner">
+                <h2>Get in touch</h2>
+                <p>Interested in collaborating or commissioning a custom track? Reach out to me!</p>
+                <form>
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                        </div>
+                        <div class="field half">
+                            <input type="email" name="email" id="email" placeholder="Email" />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" class="button primary" /></li>
+                    </ul>
+                </form>
+            </div>
         </section>
     </div>
+
+    <footer>
+        <div class="inner">
+            <p>&copy; Nick's Ambient Soundscapes. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
