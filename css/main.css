@@ -3,48 +3,48 @@
 /* Basic */
 
 body {
-    background: #3d405b;
+    background: #3d405b; /* $delft-blue */
 }
 
 body, input, select, textarea {
-    color: rgba(244, 241, 222, 0.55);
+    color: rgba(244, 241, 222, 0.55); /* $eggshell with opacity */
 }
 
 a {
-    border-bottom-color: rgba(244, 241, 222, 0.35);
+    border-bottom-color: rgba(244, 241, 222, 0.35); /* $eggshell with opacity */
     color: inherit;
 }
 
 a:hover {
     border-bottom-color: transparent;
-    color: #f4f1de;
+    color: #f4f1de; /* $eggshell */
 }
 
 strong, b {
-    color: #f4f1de;
+    color: #f4f1de; /* $eggshell */
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #f4f1de;
+    color: #f4f1de; /* $eggshell */
 }
 
 blockquote {
-    border-left: solid 4px rgba(244, 241, 222, 0.15);
+    border-left: solid 4px rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 code {
-    background: rgba(244, 241, 222, 0.05);
-    border-color: rgba(244, 241, 222, 0.15);
+    background: rgba(244, 241, 222, 0.05); /* $eggshell with opacity */
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 hr {
-    border-bottom: solid 1px rgba(244, 241, 222, 0.15);
+    border-bottom: solid 1px rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 /* Box */
 
 .box {
-    border-color: rgba(244, 241, 222, 0.15);
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 /* Button */
@@ -55,8 +55,8 @@ input[type="button"],
 button,
 .button {
     background-color: transparent;
-    border-color: rgba(244, 241, 222, 0.15) !important;
-    color: #f4f1de !important;
+    border-color: rgba(244, 241, 222, 0.15) !important; /* $eggshell with opacity */
+    color: #f4f1de !important; /* $eggshell */
 }
 
 input[type="submit"]:hover,
@@ -64,7 +64,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-    border-color: rgba(244, 241, 222, 0.55) !important;
+    border-color: rgba(244, 241, 222, 0.55) !important; /* $eggshell with opacity */
 }
 
 input[type="submit"].primary,
@@ -72,8 +72,8 @@ input[type="reset"].primary,
 input[type="button"].primary,
 button.primary,
 .button.primary {
-    background-color: #f4f1de;
-    color: #3d405b !important;
+    background-color: #f4f1de; /* $eggshell */
+    color: #3d405b !important; /* $delft-blue */
 }
 
 /* Form */
@@ -84,8 +84,8 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-    background: rgba(244, 241, 222, 0.05);
-    border-color: rgba(244, 241, 222, 0.15);
+    background: rgba(244, 241, 222, 0.05); /* $eggshell with opacity */
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 input[type="text"]:focus,
@@ -94,8 +94,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #f4f1de;
-    box-shadow: 0 0 0 1px #f4f1de;
+    border-color: #f4f1de; /* $eggshell */
+    box-shadow: 0 0 0 1px #f4f1de; /* $eggshell */
 }
 
 select {
@@ -103,146 +103,146 @@ select {
 }
 
 select option {
-    color: #f4f1de;
-    background: #3d405b;
+    color: #f4f1de; /* $eggshell */
+    background: #3d405b; /* $delft-blue */
 }
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
-    color: rgba(244, 241, 222, 0.55);
+    color: rgba(244, 241, 222, 0.55); /* $eggshell with opacity */
 }
 
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-    background: rgba(244, 241, 222, 0.05);
-    border-color: rgba(244, 241, 222, 0.15);
+    background: rgba(244, 241, 222, 0.05); /* $eggshell with opacity */
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-    background-color: #f4f1de;
-    border-color: #f4f1de;
-    color: #3d405b;
+    background-color: #f4f1de; /* $eggshell */
+    border-color: #f4f1de; /* $eggshell */
+    color: #3d405b; /* $delft-blue */
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-    border-color: #f4f1de;
-    box-shadow: 0 0 0 1px #f4f1de;
+    border-color: #f4f1de; /* $eggshell */
+    box-shadow: 0 0 0 1px #f4f1de; /* $eggshell */
 }
 
 ::-webkit-input-placeholder {
-    color: rgba(244, 241, 222, 0.35) !important;
+    color: rgba(244, 241, 222, 0.35) !important; /* $eggshell with opacity */
 }
 
 :-moz-placeholder {
-    color: rgba(244, 241, 222, 0.35) !important;
+    color: rgba(244, 241, 222, 0.35) !important; /* $eggshell with opacity */
 }
 
 ::-moz-placeholder {
-    color: rgba(244, 241, 222, 0.35) !important;
+    color: rgba(244, 241, 222, 0.35) !important; /* $eggshell with opacity */
 }
 
 :-ms-input-placeholder {
-    color: rgba(244, 241, 222, 0.35) !important;
+    color: rgba(244, 241, 222, 0.35) !important; /* $eggshell with opacity */
 }
 
 /* Icon */
 
 .icon.major {
-    border-color: rgba(244, 241, 222, 0.15);
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 .icon.major:before {
-    border-color: rgba(244, 241, 222, 0.15);
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 /* Image */
 
 .image.thumb:after {
-    background-color: rgba(244, 241, 222, 0.25);
+    background-color: rgba(244, 241, 222, 0.25); /* $eggshell with opacity */
 }
 
 /* List */
 
 ul.alt li {
-    border-top-color: rgba(244, 241, 222, 0.15);
+    border-top-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 /* Table */
 
 table tbody tr {
-    border-color: rgba(244, 241, 222, 0.15);
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(244, 241, 222, 0.05);
+    background-color: rgba(244, 241, 222, 0.05); /* $eggshell with opacity */
 }
 
 table th {
-    color: #f4f1de;
+    color: #f4f1de; /* $eggshell */
 }
 
 table thead {
-    border-bottom-color: rgba(244, 241, 222, 0.15);
+    border-bottom-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 table tfoot {
-    border-top-color: rgba(244, 241, 222, 0.15);
+    border-top-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 table.alt tbody tr td {
-    border-color: rgba(244, 241, 222, 0.15);
+    border-color: rgba(244, 241, 222, 0.15); /* $eggshell with opacity */
 }
 
 /* Wrapper */
 
 .wrapper.alt {
-    background-color: #3d405b;
+    background-color: #3d405b; /* $delft-blue */
 }
 
 .wrapper.style1 {
-    background-color: #81b29a;
+    background-color: #81b29a; /* $cambridge-blue */
 }
 
 .wrapper.style1-alt {
-    background-color: #81b29a;
+    background-color: #81b29a; /* $cambridge-blue */
 }
 
 .wrapper.style2 {
-    background-color: #e07a5f;
+    background-color: #e07a5f; /* $burnt-sienna */
 }
 
 .wrapper.style2-alt {
-    background-color: #e07a5f;
+    background-color: #e07a5f; /* $burnt-sienna */
 }
 
 .wrapper.style3 {
-    background-color: #f2cc8f;
+    background-color: #f2cc8f; /* $sunset */
 }
 
 .wrapper.style3-alt {
-    background-color: #f2cc8f;
+    background-color: #f2cc8f; /* $sunset */
 }
 
 /* Sidebar */
 
 #sidebar {
-    background: #3d405b;
+    background: #3d405b; /* $delft-blue */
 }
 
 #sidebar > .inner > .alt {
-    background-color: #2e3043;
+    background-color: #2e3043; /* Slightly darker shade of $delft-blue */
 }
 
 #sidebar nav a {
-    color: rgba(244, 241, 222, 0.35);
+    color: rgba(244, 241, 222, 0.35); /* $eggshell with opacity */
 }
 
 #sidebar nav a:hover {
-    color: rgba(244, 241, 222, 0.55);
+    color: rgba(244, 241, 222, 0.55); /* $eggshell with opacity */
 }
 
 #sidebar nav a.active {
-    color: #f4f1de;
+    color: #f4f1de; /* $eggshell */
 }
