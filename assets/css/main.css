@@ -198,10 +198,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #A4C3B2, #CCE3DE);
-				background-image: -webkit-linear-gradient(to right, #A4C3B2, #CCE3DE);
-				background-image: -ms-linear-gradient(to right, #A4C3B2, #CCE3DE);
-				background-image: linear-gradient(to right, #A4C3B2, #CCE3DE);
+				background-image: -moz-linear-gradient(to right, #CCE3DE, #A4C3B2);
+				background-image: -webkit-linear-gradient(to right, #CCE3DE, #A4C3B2);
+				background-image: -ms-linear-gradient(to right, #CCE3DE, #A4C3B2);
+				background-image: linear-gradient(to right, #CCE3DE, #A4C3B2);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3371,14 +3371,14 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #A4C3B2;
+		background-color: #ffffff;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
 
 		#header > .title {
 			border: 0;
-			color: #ffffff;
+			color: #a4c3b2;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
