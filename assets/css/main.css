@@ -3908,3 +3908,17 @@ input, select, textarea {
 			}
 
 		}
+		.profile-image-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2em auto;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #EAF4F4;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
