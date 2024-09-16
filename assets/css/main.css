@@ -3965,15 +3965,33 @@ input, select, textarea {
 .features .icon.solid.major {
     background-color: #2A3C39;
     color: #F6FFF8;
-    width: 2.5em;
-    height: 2.5em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1em;
     flex-shrink: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+}
+
+.features .icon.solid.major:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.features .icon.solid.major.fa-code:before {
+    content: "\f121";
+}
+
+.features .icon.solid.major.fa-lock:before {
+    content: "\f023";
 }
 
 .features .content {
