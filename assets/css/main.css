@@ -3258,8 +3258,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-    		background-color: #A4C3B2; /* Slightly darker background */
-    		color: #2A3C39; /* Dark text color for better contrast */
+    		background-color: #A4C3B2;
+    		color: #2A3C39;
+    		padding: 4em 0;
 		}
 
 		.wrapper.style3-alt {
@@ -3926,6 +3927,12 @@ input, select, textarea {
   object-position: center;
 }
 
+.wrapper.style3 .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
 .wrapper.style3 h2 {
     color: #2A3C39;
     font-weight: 700;
@@ -3933,17 +3940,43 @@ input, select, textarea {
     margin-bottom: 0.5em;
 }
 
-.wrapper.style3 p {
+.wrapper.style3 > p {
     font-weight: 500;
     font-size: 1.1em;
     margin-bottom: 2em;
 }
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .features section {
-    background-color: rgba(255, 255, 255, 0.2); /* Subtle white background */
+    flex-basis: calc(50% - 1em);
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 1.5em;
     border-radius: 10px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: flex-start;
+}
+
+.features .icon.major {
+    background-color: #2A3C39;
+    color: #F6FFF8;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.features .content {
+    flex-grow: 1;
 }
 
 .features h3 {
@@ -3956,11 +3989,11 @@ input, select, textarea {
 .features p {
     color: #2A3C39;
     font-weight: 400;
+    margin: 0;
 }
 
-.icon.major {
-    background-color: #2A3C39;
-    color: #F6FFF8;
-    border-radius: 50%;
-    margin-bottom: 0.5em;
+@media screen and (max-width: 736px) {
+    .features section {
+        flex-basis: 100%;
+    }
 }
