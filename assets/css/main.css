@@ -3945,19 +3945,3 @@ input, select, textarea {
     font-size: 1.1em;
     margin-bottom: 2em;
 }
-
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2em;
-}
-
-.features section {
-    flex-basis: calc(50% - 1em);
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 1.5em;
-    border-radius: 10px;
-    display: flex;
-    align-items: flex-start;
-}
