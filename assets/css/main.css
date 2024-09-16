@@ -3935,3 +3935,50 @@ input, select, textarea {
   max-width: 100%;
   border-radius: 12px;
 }
+
+.services-section {
+    background-color: #A4C3B2; /* Slightly darker background */
+    padding: 2em;
+    color: #2A3C39; /* Dark text color for better contrast */
+}
+
+.services-section h2 {
+    color: #2A3C39;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.services-section p {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+.service-box {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle white background */
+    padding: 1.5em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.service-box h3 {
+    color: #2A3C39;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.service-box p {
+    color: #2A3C39;
+    font-weight: 400;
+}
+
+.service-icon {
+    background-color: #2A3C39;
+    color: #F6FFF8;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
