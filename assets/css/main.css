@@ -3940,7 +3940,7 @@ input, select, textarea {
     margin-bottom: 0.5em;
 }
 
-.wrapper.style3 > p {
+.wrapper.style3 > .inner > p {
     font-weight: 500;
     font-size: 1.1em;
     margin-bottom: 2em;
@@ -3950,6 +3950,7 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2em;
 }
 
 .features section {
@@ -3957,12 +3958,11 @@ input, select, textarea {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 1.5em;
     border-radius: 10px;
-    margin-bottom: 2em;
     display: flex;
     align-items: flex-start;
 }
 
-.features .icon.major {
+.features .icon.solid.major {
     background-color: #2A3C39;
     color: #F6FFF8;
     width: 2.5em;
@@ -3973,6 +3973,7 @@ input, select, textarea {
     justify-content: center;
     margin-right: 1em;
     flex-shrink: 0;
+    font-size: 1.2em;
 }
 
 .features .content {
