@@ -21,18 +21,43 @@
             padding: 0 8%;
         }
 
+        .hero-video-wrap {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-video-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.55;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(
+                105deg,
+                rgba(12, 23, 16, 0.80) 0%,
+                rgba(12, 23, 16, 0.45) 55%,
+                rgba(12, 23, 16, 0.20) 100%
+            );
+        }
+
         .hero-glow {
             position: absolute;
             inset: 0;
+            z-index: 2;
             background:
-                radial-gradient(ellipse 70% 70% at 10% 60%, rgba(143, 175, 130, 0.20) 0%, transparent 65%),
-                radial-gradient(ellipse 50% 50% at 80% 20%, rgba(74, 107, 60, 0.10) 0%, transparent 55%),
-                radial-gradient(ellipse 40% 40% at 60% 85%, rgba(78, 110, 72, 0.06) 0%, transparent 55%);
+                radial-gradient(ellipse 70% 70% at 10% 60%, rgba(143, 175, 130, 0.12) 0%, transparent 65%),
+                radial-gradient(ellipse 50% 50% at 80% 20%, rgba(74, 107, 60, 0.06) 0%, transparent 55%);
         }
 
         .hero-inner {
             position: relative;
-            z-index: 2;
+            z-index: 3;
             max-width: 1000px;
             width: 100%;
             margin: 0 auto;
@@ -127,6 +152,7 @@
             gap: 1rem;
             opacity: 0;
             animation: fadeIn 1s var(--ease) 1.4s forwards;
+            z-index: 3;
         }
 
         .scroll-hint span {
@@ -292,6 +318,12 @@
 
 <!-- ─── HERO ──────────────────────────────── -->
 <section id="hero">
+    <div class="hero-video-wrap">
+        <video autoplay muted loop playsinline>
+            <source src="videos/lakecomo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="hero-overlay"></div>
     <div class="hero-glow"></div>
     <div class="hero-inner">
         <div class="hero-top">

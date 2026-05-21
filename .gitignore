@@ -1,0 +1,11 @@
+# Original camera files — too large for GitHub
+*.MOV
+*.mov
+
+# Screenshot artifacts from development
+*.png
+!images/*.png
+!images/*.PNG
+
+# Playwright artifacts
+.playwright-mcp/
