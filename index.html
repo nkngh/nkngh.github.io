@@ -170,6 +170,18 @@
             animation: pulse-line 2.4s ease-in-out infinite;
         }
 
+        #hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 220px;
+            background: linear-gradient(to bottom, transparent, var(--walnut));
+            z-index: 4;
+            pointer-events: none;
+        }
+
         /* ─── FEATURED MUSIC ──────────────────── */
         #featured {
             background: var(--walnut);
@@ -204,6 +216,7 @@
             line-height: 0.9;
             letter-spacing: -0.02em;
             margin-bottom: 1.75rem;
+            opacity: 1;
         }
 
         .featured-aside h2 em {
@@ -216,7 +229,7 @@
         .featured-aside p {
             font-size: 1rem;
             line-height: 1.75;
-            color: rgba(237, 242, 230, 0.5);
+            color: rgba(237, 242, 230, 0.75);
             font-weight: 300;
             margin-bottom: 2.5rem;
         }
@@ -327,9 +340,6 @@
     <div class="hero-glow"></div>
     <div class="hero-inner">
         <div class="hero-top">
-            <div class="hero-photo">
-                <img src="images/profile.PNG" alt="Thibaut" />
-            </div>
             <span class="hero-eyebrow">Tomball, Texas &nbsp;&bull;&nbsp; Lofi &amp; Ambient</span>
         </div>
         <h1 class="hero-name">Thibaut</h1>
@@ -367,12 +377,6 @@
         <div class="reveal reveal-d1">
             <h2>Listen<br><em>now</em></h2>
             <p>28K monthly listeners across four projects. Sync-ready catalog spanning lofi, ambient, and beyond.</p>
-            <div class="local-player">
-                <span class="local-player-track">In The Deep</span>
-                <audio controls>
-                    <source src="audio/inthedeep.mp3" type="audio/mpeg">
-                </audio>
-            </div>
             <a href="music.html" class="link-arrow">Full catalog &amp; all projects &rarr;</a>
         </div>
     </div>

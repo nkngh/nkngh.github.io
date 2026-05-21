@@ -639,3 +639,12 @@ Error
 [19838312ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
 [19838618ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
 [19838767ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[20620402ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20620411ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20620411ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20620500ms] [WARNING] %cDRM might not be available from unsecure contexts background: #222; color: #bada55; font-size: 40px @ https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-799073d553e438cf.js:4
+[20620556ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/favicon.ico:0
+[20920386ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20920394ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20920394ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[20920407ms] [WARNING] %cDRM might not be available from unsecure contexts background: #222; color: #bada55; font-size: 40px @ https://embed-cdn.spotifycdn.com/_next/static/chunks/pages/_app-799073d553e438cf.js:4
