@@ -1,0 +1,14 @@
+[     381ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.sentry.io/api/114855/envelope/?sentry_version=7&sentry_key=de32132fc06e4b28965ecf25332c3a25&sentry_client=sentry.javascript.react%2F10.38.0:0
+[     569ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://guc3-spclient.spotify.com/remote-config-resolver/v3/unauth/configuration:0
+[     570ms] [ERROR] [32mprovider:transport[0m resolve error M {} @ https://open.spotifycdn.com/cdn/build/web-player/web-player.0d65db66.js:4
+[     574ms] [WARNING] It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior. @ https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.03a68a86.js:0
+[     574ms] [WARNING] com.microsoft.playready.recommendation: Internal testing is highly recommended prior to enabling PlayReady playback on Windows. Failure to do so may cause application instability or playback errors.
+
+Before generating a request, setServerCertificate() must be called with a valid server certificate. Otherwise, generateRequest() could fail. @ https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.03a68a86.js:0
+[     574ms] [WARNING] com.microsoft.playready.recommendation.3000: Internal testing is highly recommended prior to enabling PlayReady playback on Windows. Failure to do so may cause application instability or playback errors.
+
+Before generating a request, setServerCertificate() must be called with a valid server certificate. Otherwise, generateRequest() could fail. @ https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.03a68a86.js:0
+[     609ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://cdn.cookielaw.org/scripttemplates/otSDKStub.js:0
+[     688ms] [LOG] Should auto-play but RC is not enabled @ https://open.spotifycdn.com/cdn/build/web-player/web-player.0d65db66.js:4
+[     744ms] Uncaught (in promise) undefined
+    at s (https://open.spotifycdn.com/cdn/build/web-player/vendor~web-player.03a68a86.js:13:394037)

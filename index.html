@@ -1,34 +1,34 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>NKN — Lofi & Ambient Soundscapes</title>
+    <title>NKN — Lofi & Ambient Producer</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="NKN — Composer of lofi & ambient soundscapes. Music for focus, relaxation, and creative work." />
+    <meta name="description" content="NKN — Lofi and ambient producer from Spring, Texas. 28K monthly listeners, 400K+ streams. Custom compositions, sync licensing, and collaboration." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --espresso:   #0F0A05;
-            --walnut:     #1C1008;
-            --amber:      #C07834;
-            --amber-lt:   #D4894A;
-            --burnt:      #8B3A1F;
-            --sage:       #6B7D5E;
-            --cream:      #F2E8D5;
-            --parchment:  #FAF6EE;
-            --ink:        #1C1008;
-            --warm-mid:   #6B5240;
-            --light-border: #E2D5BE;
-            --dark-border:  #2A1C0A;
+            --espresso:     #0C1710;
+            --walnut:       #152114;
+            --amber:        #8FAF82;
+            --amber-lt:     #A3C498;
+            --amber-dim:    rgba(143, 175, 130, 0.12);
+            --burnt:        #4A6B3C;
+            --cream:        #EDF2E6;
+            --parchment:    #F4F7EF;
+            --ink:          #111A10;
+            --warm-mid:     #4E6248;
+            --light-border: #CDDAC0;
+            --dark-border:  #1C3019;
 
-            --font-d: 'Cormorant Garamond', Georgia, serif;
-            --font-b: 'Jost', system-ui, sans-serif;
+            --font-d: 'Spectral', Georgia, serif;
+            --font-b: 'Mulish', system-ui, sans-serif;
             --ease:   cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -75,11 +75,11 @@
 
         .nav-logo {
             font-family: var(--font-d);
-            font-size: 1.7rem;
-            font-weight: 500;
+            font-size: 1.5rem;
+            font-weight: 700;
             color: var(--amber);
             text-decoration: none;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.04em;
         }
 
         .nav-links {
@@ -90,12 +90,12 @@
 
         .nav-links a {
             font-size: 0.72rem;
-            font-weight: 500;
-            letter-spacing: 0.18em;
+            font-weight: 600;
+            letter-spacing: 0.16em;
             text-transform: uppercase;
             color: var(--cream);
             text-decoration: none;
-            opacity: 0.65;
+            opacity: 0.55;
             transition: opacity 0.2s;
         }
         .nav-links a:hover { opacity: 1; }
@@ -106,104 +106,117 @@
             background: var(--espresso);
             display: flex;
             align-items: center;
-            justify-content: center;
             position: relative;
             overflow: hidden;
+            padding: 0 8% 0 8%;
         }
 
         .hero-glow {
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse 60% 60% at 50% 40%, rgba(192, 120, 52, 0.11) 0%, transparent 70%),
-                radial-gradient(ellipse 40% 50% at 20% 70%, rgba(139, 58, 31, 0.07) 0%, transparent 60%),
-                radial-gradient(ellipse 30% 40% at 80% 20%, rgba(107, 125, 94, 0.05) 0%, transparent 60%);
+                radial-gradient(ellipse 70% 70% at 10% 60%, rgba(143, 175, 130, 0.20) 0%, transparent 65%),
+                radial-gradient(ellipse 50% 50% at 80% 20%, rgba(74, 107, 60, 0.10) 0%, transparent 55%),
+                radial-gradient(ellipse 40% 40% at 60% 85%, rgba(78, 110, 72, 0.06) 0%, transparent 55%);
         }
 
         .hero-inner {
             position: relative;
             z-index: 2;
-            text-align: center;
-            padding: 2rem 1.5rem;
-            max-width: 960px;
+            max-width: 1000px;
             width: 100%;
+        }
+
+        .hero-top {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            animation: fadeUp 0.9s var(--ease) 0.2s forwards;
+        }
+
+        .hero-photo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(143, 175, 130, 0.45);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .hero-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: sepia(12%) contrast(1.04);
         }
 
         .hero-eyebrow {
-            display: inline-block;
-            font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.32em;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
-            color: var(--amber);
-            margin-bottom: 2.5rem;
-            opacity: 0;
-            animation: fadeUp 1s var(--ease) 0.2s forwards;
-        }
-
-        .hero-photo-ring {
-            width: 156px;
-            height: 156px;
-            margin: 0 auto 2.25rem;
-            border-radius: 50%;
-            border: 1.5px solid rgba(192, 120, 52, 0.45);
-            padding: 5px;
-            box-shadow: 0 0 60px rgba(192, 120, 52, 0.12);
-            opacity: 0;
-            animation: fadeUp 1s var(--ease) 0.45s forwards;
-        }
-
-        .hero-photo-ring img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            filter: sepia(15%) contrast(1.04) brightness(0.97);
+            color: rgba(237, 242, 230, 0.5);
         }
 
         .hero-name {
             font-family: var(--font-d);
-            font-size: clamp(90px, 15vw, 190px);
-            font-weight: 300;
+            font-size: clamp(80px, 14vw, 180px);
+            font-weight: 800;
             color: var(--cream);
-            line-height: 0.85;
-            letter-spacing: -0.025em;
-            margin-bottom: 1.1rem;
+            line-height: 0.88;
+            letter-spacing: -0.03em;
+            margin-bottom: 1.25rem;
             opacity: 0;
-            animation: fadeUp 1.2s var(--ease) 0.65s forwards;
+            animation: fadeUp 1.1s var(--ease) 0.45s forwards;
         }
 
         .hero-sub {
             font-family: var(--font-d);
-            font-size: clamp(1.1rem, 2.5vw, 1.55rem);
-            font-weight: 300;
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            font-weight: 400;
             font-style: italic;
-            color: rgba(242, 232, 213, 0.52);
-            letter-spacing: 0.02em;
-            margin-bottom: 3rem;
+            color: rgba(237, 242, 230, 0.5);
+            margin-bottom: 1rem;
             opacity: 0;
-            animation: fadeUp 1s var(--ease) 0.9s forwards;
+            animation: fadeUp 1s var(--ease) 0.7s forwards;
+        }
+
+        .hero-stats-line {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--amber);
+            margin-bottom: 2.75rem;
+            opacity: 0;
+            animation: fadeUp 1s var(--ease) 0.85s forwards;
+        }
+
+        .hero-stats-line span {
+            color: rgba(237, 242, 230, 0.3);
+            margin: 0 0.75rem;
         }
 
         .hero-actions {
             display: flex;
             gap: 1.25rem;
-            justify-content: center;
             flex-wrap: wrap;
             opacity: 0;
-            animation: fadeUp 1s var(--ease) 1.1s forwards;
+            animation: fadeUp 1s var(--ease) 1s forwards;
         }
 
         .btn-fill {
             font-family: var(--font-b);
             font-size: 0.72rem;
-            font-weight: 500;
-            letter-spacing: 0.2em;
+            font-weight: 600;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--espresso);
             background: var(--amber);
             border: none;
-            padding: 0.95rem 2.6rem;
+            padding: 0.95rem 2.5rem;
             text-decoration: none;
             cursor: pointer;
             transition: background 0.25s, transform 0.25s;
@@ -214,67 +227,54 @@
         .btn-outline {
             font-family: var(--font-b);
             font-size: 0.72rem;
-            font-weight: 500;
-            letter-spacing: 0.2em;
+            font-weight: 600;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--cream);
             background: transparent;
-            border: 1px solid rgba(242, 232, 213, 0.28);
-            padding: 0.95rem 2.6rem;
+            border: 1px solid rgba(237, 242, 230, 0.25);
+            padding: 0.95rem 2.5rem;
             text-decoration: none;
             cursor: pointer;
             transition: border-color 0.25s, transform 0.25s;
             display: inline-block;
         }
-        .btn-outline:hover { border-color: rgba(242, 232, 213, 0.65); transform: translateY(-2px); }
+        .btn-outline:hover { border-color: rgba(237, 242, 230, 0.6); transform: translateY(-2px); }
 
         .scroll-hint {
             position: absolute;
             bottom: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 8%;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            gap: 0.6rem;
+            gap: 1rem;
             opacity: 0;
-            animation: fadeIn 1s var(--ease) 1.6s forwards;
+            animation: fadeIn 1s var(--ease) 1.4s forwards;
         }
 
         .scroll-hint span {
             font-size: 0.6rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: rgba(242, 232, 213, 0.28);
+            color: rgba(237, 242, 230, 0.2);
         }
 
         .scroll-line {
-            width: 1px;
-            height: 48px;
-            background: linear-gradient(to bottom, rgba(192, 120, 52, 0.7), transparent);
+            width: 48px;
+            height: 1px;
+            background: linear-gradient(to right, rgba(143, 175, 130, 0.6), transparent);
             animation: pulse-line 2.4s ease-in-out infinite;
         }
 
         /* ─── ABOUT ───────────────────────────── */
         #about {
             background: var(--cream);
-            padding: 9rem 3rem;
-        }
-
-        .section-label {
-            font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.32em;
-            text-transform: uppercase;
-            color: var(--amber);
-            display: block;
-            margin-bottom: 1.2rem;
+            padding: 9rem 8%;
         }
 
         .about-grid {
-            max-width: 1180px;
-            margin: 0 auto;
+            max-width: 1100px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 7rem;
@@ -283,8 +283,8 @@
 
         .about-left h2 {
             font-family: var(--font-d);
-            font-size: clamp(2.6rem, 5vw, 4.5rem);
-            font-weight: 400;
+            font-size: clamp(2.4rem, 4.5vw, 4rem);
+            font-weight: 700;
             color: var(--ink);
             line-height: 1.08;
             margin-bottom: 2rem;
@@ -292,6 +292,7 @@
 
         .about-left h2 em {
             font-style: italic;
+            font-weight: 400;
             color: var(--burnt);
         }
 
@@ -303,15 +304,15 @@
             margin-bottom: 1.5rem;
         }
 
-        .about-quote {
-            border-left: 2px solid var(--amber);
-            padding: 0.9rem 1.5rem;
+        .about-pull {
+            background: var(--amber-dim);
+            padding: 1.5rem 1.75rem;
             margin: 2.25rem 0;
             font-family: var(--font-d);
-            font-size: 1.45rem;
+            font-size: 1.35rem;
             font-style: italic;
             color: var(--ink);
-            line-height: 1.38;
+            line-height: 1.42;
         }
 
         .genre-tags {
@@ -323,32 +324,33 @@
 
         .tag {
             font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.15em;
+            font-weight: 600;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
             padding: 0.4rem 1rem;
             border: 1px solid var(--light-border);
             color: var(--warm-mid);
         }
 
-        /* Press right column */
+        /* Right: stats + highlights */
         .press-stats {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.25rem;
-            margin-bottom: 2.5rem;
+            gap: 1px;
+            background: var(--light-border);
+            border: 1px solid var(--light-border);
+            margin-bottom: 3rem;
         }
 
         .stat-card {
-            padding: 1.5rem 1.25rem;
-            border: 1px solid var(--light-border);
+            padding: 1.75rem 1.5rem;
             background: var(--parchment);
         }
 
         .stat-num {
             font-family: var(--font-d);
-            font-size: 2.6rem;
-            font-weight: 500;
+            font-size: 2.8rem;
+            font-weight: 700;
             color: var(--ink);
             line-height: 1;
             margin-bottom: 0.35rem;
@@ -356,72 +358,85 @@
 
         .stat-lbl {
             font-size: 0.67rem;
-            font-weight: 500;
-            letter-spacing: 0.2em;
+            font-weight: 600;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--warm-mid);
         }
 
-        .press-quote-card {
-            background: var(--walnut);
-            color: var(--cream);
-            padding: 2rem;
-            margin-bottom: 1.75rem;
-        }
-
-        .pq-text {
-            font-family: var(--font-d);
-            font-size: 1.25rem;
-            font-style: italic;
-            line-height: 1.5;
-            margin-bottom: 1rem;
-        }
-
-        .pq-src {
-            font-size: 0.67rem;
-            font-weight: 500;
-            letter-spacing: 0.22em;
+        .highlights-heading {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.28em;
             text-transform: uppercase;
             color: var(--amber);
+            margin-bottom: 1.25rem;
+            display: block;
+        }
+
+        .highlights-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .highlights-list li {
+            font-size: 0.92rem;
+            font-weight: 300;
+            color: var(--warm-mid);
+            line-height: 1.5;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .highlights-list li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--amber);
+            font-weight: 400;
         }
 
         /* ─── MUSIC ───────────────────────────── */
         #music {
             background: var(--walnut);
-            padding: 9rem 3rem;
+            padding: 9rem 8%;
         }
 
         .music-hdr {
-            max-width: 1180px;
-            margin: 0 auto 4rem;
+            max-width: 1100px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             flex-wrap: wrap;
             gap: 1.5rem;
+            margin-bottom: 4rem;
         }
 
         .music-hdr h2 {
             font-family: var(--font-d);
-            font-size: clamp(2.6rem, 5vw, 4.2rem);
-            font-weight: 400;
+            font-size: clamp(2.4rem, 4.5vw, 4rem);
+            font-weight: 700;
             color: var(--cream);
             line-height: 1.08;
         }
 
         .music-hdr h2 em {
             font-style: italic;
+            font-weight: 400;
             color: var(--amber);
         }
 
         .link-arrow {
             font-size: 0.7rem;
-            font-weight: 500;
-            letter-spacing: 0.2em;
+            font-weight: 600;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--amber);
             text-decoration: none;
-            border-bottom: 1px solid rgba(192, 120, 52, 0.35);
+            border-bottom: 1px solid rgba(143, 175, 130, 0.3);
             padding-bottom: 0.2rem;
             transition: border-color 0.2s;
             white-space: nowrap;
@@ -429,8 +444,7 @@
         .link-arrow:hover { border-color: var(--amber); }
 
         .music-grid {
-            max-width: 1180px;
-            margin: 0 auto;
+            max-width: 1100px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -457,7 +471,7 @@
 
         .local-player-lbl {
             font-size: 0.65rem;
-            font-weight: 500;
+            font-weight: 600;
             letter-spacing: 0.22em;
             text-transform: uppercase;
             color: var(--amber);
@@ -470,81 +484,74 @@
             accent-color: var(--amber);
         }
 
+        /* Track list */
         .track-list {
             display: flex;
             flex-direction: column;
-            gap: 1px;
+        }
+
+        .track-list-heading {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: rgba(143, 175, 130, 0.65);
+            margin-bottom: 1rem;
+            display: block;
         }
 
         .track-row {
             display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.4rem 1.5rem;
-            background: rgba(255,255,255,0.025);
-            border: 1px solid var(--dark-border);
+            align-items: baseline;
+            gap: 1.25rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--dark-border);
             text-decoration: none;
-            transition: background 0.22s, border-color 0.22s;
-            margin-bottom: 1px;
+            transition: background 0.2s;
         }
-        .track-row:hover {
-            background: rgba(192, 120, 52, 0.08);
-            border-color: rgba(192, 120, 52, 0.25);
-        }
+        .track-row:first-of-type { border-top: 1px solid var(--dark-border); }
+        .track-row:hover { background: rgba(143, 175, 130, 0.06); padding-left: 0.5rem; padding-right: 0.5rem; margin: 0 -0.5rem; }
 
         .track-n {
             font-family: var(--font-d);
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: rgba(242, 232, 213, 0.2);
-            min-width: 2rem;
-            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(237, 242, 230, 0.2);
+            min-width: 1.5rem;
+            flex-shrink: 0;
         }
 
-        .track-info { flex: 1; }
+        .track-info { flex: 1; min-width: 0; }
 
         .track-title {
             font-family: var(--font-d);
-            font-size: 1.2rem;
-            font-weight: 400;
+            font-size: 1.15rem;
+            font-weight: 600;
             color: var(--cream);
             display: block;
-            margin-bottom: 0.15rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
-        .track-sub {
-            font-size: 0.67rem;
-            font-weight: 500;
-            letter-spacing: 0.15em;
+        .track-streams {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: rgba(242, 232, 213, 0.35);
-        }
-
-        .track-arr {
-            color: var(--amber);
-            font-size: 1.1rem;
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-        .track-row:hover .track-arr { opacity: 1; }
-
-        .track-placeholder {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.4rem 1.5rem;
-            border: 1px dashed rgba(42, 28, 10, 0.8);
-            opacity: 0.35;
+            color: rgba(237, 242, 230, 0.3);
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .services-strip {
-            max-width: 1180px;
-            margin: 4rem auto 0;
+            max-width: 1100px;
+            margin: 5rem 0 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1px;
-            border: 1px solid var(--dark-border);
             background: var(--dark-border);
+            border: 1px solid var(--dark-border);
         }
 
         .service-item {
@@ -552,39 +559,38 @@
             padding: 2rem;
         }
 
+        .service-num {
+            font-family: var(--font-d);
+            font-size: 2rem;
+            font-weight: 400;
+            color: rgba(143, 175, 130, 0.18);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
         .service-item h3 {
             font-family: var(--font-d);
-            font-size: 1.4rem;
-            font-weight: 400;
+            font-size: 1.3rem;
+            font-weight: 600;
             color: var(--cream);
             margin-bottom: 0.75rem;
         }
 
         .service-item p {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             line-height: 1.65;
-            color: rgba(242, 232, 213, 0.45);
+            color: rgba(237, 242, 230, 0.4);
             font-weight: 300;
-        }
-
-        .service-num {
-            font-family: var(--font-d);
-            font-size: 2.5rem;
-            font-weight: 300;
-            color: rgba(192, 120, 52, 0.2);
-            line-height: 1;
-            margin-bottom: 1rem;
         }
 
         /* ─── CONTACT ─────────────────────────── */
         #contact {
             background: var(--parchment);
-            padding: 9rem 3rem;
+            padding: 9rem 8%;
         }
 
         .contact-grid {
-            max-width: 1180px;
-            margin: 0 auto;
+            max-width: 1100px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 7rem;
@@ -593,8 +599,8 @@
 
         .contact-left h2 {
             font-family: var(--font-d);
-            font-size: clamp(2.6rem, 5vw, 4.2rem);
-            font-weight: 400;
+            font-size: clamp(2.4rem, 4.5vw, 4rem);
+            font-weight: 700;
             color: var(--ink);
             line-height: 1.08;
             margin-bottom: 1.5rem;
@@ -602,6 +608,7 @@
 
         .contact-left h2 em {
             font-style: italic;
+            font-weight: 400;
             color: var(--burnt);
         }
 
@@ -616,7 +623,7 @@
         .contact-details {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1.25rem;
             margin-bottom: 2.5rem;
         }
 
@@ -629,14 +636,15 @@
         .cd-label {
             font-size: 0.63rem;
             font-weight: 600;
-            letter-spacing: 0.28em;
+            letter-spacing: 0.26em;
             text-transform: uppercase;
             color: var(--amber);
-            min-width: 70px;
+            min-width: 80px;
+            flex-shrink: 0;
         }
 
         .cd-val {
-            font-size: 0.98rem;
+            font-size: 0.95rem;
             color: var(--ink);
             text-decoration: none;
             font-weight: 300;
@@ -646,14 +654,14 @@
 
         .socials {
             display: flex;
-            gap: 1.75rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
         }
 
         .social-a {
             font-size: 0.68rem;
-            font-weight: 500;
-            letter-spacing: 0.18em;
+            font-weight: 600;
+            letter-spacing: 0.16em;
             text-transform: uppercase;
             color: var(--warm-mid);
             text-decoration: none;
@@ -685,7 +693,7 @@
         .field label {
             font-size: 0.63rem;
             font-weight: 600;
-            letter-spacing: 0.28em;
+            letter-spacing: 0.26em;
             text-transform: uppercase;
             color: var(--warm-mid);
         }
@@ -707,19 +715,15 @@
         }
 
         .field input:focus,
-        .field textarea:focus {
-            border-bottom-color: var(--amber);
-        }
+        .field textarea:focus { border-bottom-color: var(--amber); }
 
         .field input::placeholder,
-        .field textarea::placeholder {
-            color: rgba(107, 82, 64, 0.35);
-        }
+        .field textarea::placeholder { color: rgba(107, 82, 64, 0.35); }
 
         /* ─── FOOTER ──────────────────────────── */
         footer {
             background: var(--espresso);
-            padding: 2rem 3rem;
+            padding: 2rem 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -728,22 +732,22 @@
 
         .foot-logo {
             font-family: var(--font-d);
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: rgba(242, 232, 213, 0.4);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: rgba(237, 242, 230, 0.35);
             text-decoration: none;
         }
 
         .foot-copy {
             font-size: 0.68rem;
-            color: rgba(242, 232, 213, 0.22);
+            color: rgba(237, 242, 230, 0.2);
             letter-spacing: 0.1em;
         }
 
         /* ─── ANIMATIONS ──────────────────────── */
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(22px); }
-            to   { opacity: 1; transform: translateY(0);    }
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeIn {
@@ -752,31 +756,28 @@
         }
 
         @keyframes pulse-line {
-            0%, 100% { transform: scaleY(1);   opacity: 1;   }
-            50%       { transform: scaleY(0.4); opacity: 0.2; }
+            0%, 100% { opacity: 1; transform: scaleX(1); }
+            50%       { opacity: 0.2; transform: scaleX(0.5); }
         }
 
         .reveal {
             opacity: 0;
-            transform: translateY(32px);
+            transform: translateY(28px);
             transition: opacity 0.85s var(--ease), transform 0.85s var(--ease);
         }
 
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .reveal-delay-1 { transition-delay: 0.12s; }
-        .reveal-delay-2 { transition-delay: 0.24s; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .reveal-d1 { transition-delay: 0.12s; }
+        .reveal-d2 { transition-delay: 0.24s; }
 
         /* ─── RESPONSIVE ──────────────────────── */
         @media (max-width: 920px) {
-            #nav { padding: 1.2rem 1.5rem; }
-            #nav.scrolled { padding: 0.8rem 1.5rem; }
+            #nav { padding: 1.2rem 5%; }
+            #nav.scrolled { padding: 0.8rem 5%; }
             .nav-links { display: none; }
 
-            #about, #music, #contact { padding: 5.5rem 1.5rem; }
+            #hero { padding: 0 5%; }
+            #about, #music, #contact { padding: 5.5rem 5%; }
 
             .about-grid,
             .music-grid,
@@ -786,14 +787,13 @@
             }
 
             .press-stats { grid-template-columns: 1fr 1fr; }
-
             .music-hdr { flex-direction: column; align-items: flex-start; }
-
             .services-strip { grid-template-columns: 1fr; }
-
             .form-row { grid-template-columns: 1fr; }
 
             footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+
+            .scroll-hint { left: 5%; }
         }
     </style>
 </head>
@@ -814,15 +814,25 @@
 <section id="hero">
     <div class="hero-glow"></div>
     <div class="hero-inner">
-        <span class="hero-eyebrow">Composer &nbsp;&bull;&nbsp; Sound Designer &nbsp;&bull;&nbsp; Ambient Artist</span>
-        <div class="hero-photo-ring">
-            <img src="images/profile.PNG" alt="NKN" />
+        <div class="hero-top">
+            <div class="hero-photo">
+                <img src="images/profile.PNG" alt="NKN" />
+            </div>
+            <span class="hero-eyebrow">Spring, Texas &nbsp;&bull;&nbsp; Lofi / Ambient Producer</span>
         </div>
         <h1 class="hero-name">NKN</h1>
-        <p class="hero-sub">Lofi &amp; Ambient Soundscapes</p>
+        <p class="hero-sub">Lofi &middot; Ambient &middot; Piano &middot; Retrowave</p>
+        <p class="hero-stats-line">
+            28K monthly listeners
+            <span>&middot;</span>
+            400K+ total streams
+            <span>&middot;</span>
+            LoFi Cafe Records
+        </p>
         <div class="hero-actions">
             <a href="#music" class="btn-fill">Listen Now</a>
             <a href="#contact" class="btn-outline">Book &amp; Collaborate</a>
+            <a href="NKN_EPK.pdf" class="btn-outline" download="NKN_EPK.pdf">Download EPK</a>
         </div>
     </div>
     <div class="scroll-hint">
@@ -831,52 +841,54 @@
     </div>
 </section>
 
-<!-- ─── BIO / PRESS ────────────────────────── -->
+<!-- ─── BIO ───────────────────────────────── -->
 <section id="about">
     <div class="about-grid">
 
         <div class="about-left reveal">
-            <span class="section-label">About</span>
-            <h2>Crafting worlds<br><em>through sound</em></h2>
-            <p>NKN is an independent composer and sound designer specializing in lofi, ambient, and atmospheric soundscapes — music engineered for deep focus, creative flow, and quiet moments of reflection.</p>
-            <p>Drawing inspiration from the liminal spaces between waking and sleep, NKN's compositions weave organic textures with subtle electronic elements to create sound environments that feel both intimate and expansive.</p>
-            <blockquote class="about-quote">
+            <h2>Quiet moments<br>in a <em>loud world</em></h2>
+            <p>NKN is a lofi and ambient producer crafting introspective soundscapes rooted in a lifelong love of music. Raised in a musical household, his productions blend warmth and melancholy into music that feels like a quiet moment in a loud world.</p>
+            <p>BMI registered songwriter and publisher (Music by Thibaut), with placements on Spotify editorial playlists and a home at LoFi Cafe Records.</p>
+            <blockquote class="about-pull">
                 "Music that exists in the space between thought and feeling."
             </blockquote>
             <div class="genre-tags">
                 <span class="tag">Lofi</span>
                 <span class="tag">Ambient</span>
-                <span class="tag">Chillhop</span>
+                <span class="tag">Piano</span>
+                <span class="tag">Retrowave</span>
                 <span class="tag">Instrumental</span>
-                <span class="tag">Atmospheric</span>
             </div>
         </div>
 
-        <div class="about-right reveal reveal-delay-1">
-            <span class="section-label">Press Kit</span>
+        <div class="reveal reveal-d1">
             <div class="press-stats">
                 <div class="stat-card">
-                    <div class="stat-num">∞</div>
-                    <div class="stat-lbl">Hours Streamed</div>
+                    <div class="stat-num">28K</div>
+                    <div class="stat-lbl">Monthly Listeners</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">10+</div>
-                    <div class="stat-lbl">Original Tracks</div>
+                    <div class="stat-num">400K+</div>
+                    <div class="stat-lbl">Total Streams</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">3+</div>
-                    <div class="stat-lbl">Platforms</div>
+                    <div class="stat-num">155K</div>
+                    <div class="stat-lbl">Top Track Streams</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">2024</div>
-                    <div class="stat-lbl">Active Since</div>
+                    <div class="stat-num">6+</div>
+                    <div class="stat-lbl">Years Active</div>
                 </div>
             </div>
-            <div class="press-quote-card">
-                <p class="pq-text">"Immersive soundscapes that transport you somewhere quieter."</p>
-                <span class="pq-src">— Press</span>
-            </div>
-            <a href="#contact" class="btn-fill">Request Full Press Kit</a>
+            <span class="highlights-heading">Highlights</span>
+            <ul class="highlights-list">
+                <li>Featured on <em>lofi beats for insomniacs</em> (Spotify editorial)</li>
+                <li>Featured on <em>minecore vol.1</em> (Spotify)</li>
+                <li>LoFi Cafe Records artist</li>
+                <li>BMI registered songwriter &amp; publisher</li>
+                <li>Multiple Spotify projects: NKN, sound of nunki, enkayen, Dancing Room Only</li>
+            </ul>
+            <a href="#contact" class="btn-fill">Request Press Kit</a>
         </div>
 
     </div>
@@ -887,10 +899,9 @@
 
     <div class="music-hdr reveal">
         <div>
-            <span class="section-label" style="color:rgba(192,120,52,0.75)">Discography</span>
-            <h2>Featured<br><em>Tracks</em></h2>
+            <h2>Top<br><em>Tracks</em></h2>
         </div>
-        <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="link-arrow">View all on Spotify ↗</a>
+        <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="link-arrow">Full discography on Spotify ↗</a>
     </div>
 
     <div class="music-grid">
@@ -905,51 +916,61 @@
                 </iframe>
             </div>
             <div class="local-player">
-                <span class="local-player-lbl">Preview · In The Deep</span>
+                <span class="local-player-lbl">Preview &middot; In The Deep</span>
                 <audio controls>
                     <source src="audio/inthedeep.mp3" type="audio/mpeg">
-                    Your browser does not support audio.
                 </audio>
             </div>
         </div>
 
-        <div class="reveal reveal-delay-1">
+        <div class="reveal reveal-d1">
+            <span class="track-list-heading">Streaming Stats</span>
             <div class="track-list">
-                <a href="https://open.spotify.com/track/6JVPcWIm7SzwYrNvxWtpDw" target="_blank" rel="noopener" class="track-row">
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
                     <span class="track-n">01</span>
-                    <div class="track-info">
-                        <span class="track-title">In The Deep</span>
-                        <span class="track-sub">Ambient · Meditation</span>
-                    </div>
-                    <span class="track-arr">↗</span>
+                    <div class="track-info"><span class="track-title">whispers from the void</span></div>
+                    <span class="track-streams">155,416</span>
                 </a>
-                <div class="track-placeholder">
-                    <span class="track-n">—</span>
-                    <div class="track-info">
-                        <span class="track-title" style="color:rgba(242,232,213,0.35)">More tracks on Spotify</span>
-                        <span class="track-sub">Full discography available</span>
-                    </div>
-                </div>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">02</span>
+                    <div class="track-info"><span class="track-title">Reminiscing</span></div>
+                    <span class="track-streams">78,201</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">03</span>
+                    <div class="track-info"><span class="track-title">Empathy For Sitting</span></div>
+                    <span class="track-streams">46,342</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">04</span>
+                    <div class="track-info"><span class="track-title">when everything else changes</span></div>
+                    <span class="track-streams">26,806</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">05</span>
+                    <div class="track-info"><span class="track-title">Thinking Of You</span></div>
+                    <span class="track-streams">26,084</span>
+                </a>
             </div>
         </div>
 
     </div>
 
-    <div class="services-strip reveal" style="margin-top:5rem">
+    <div class="services-strip reveal">
         <div class="service-item">
             <div class="service-num">01</div>
             <h3>Custom Compositions</h3>
-            <p>Tailored ambient tracks crafted for your specific mood, tempo, and purpose.</p>
+            <p>Original ambient and lofi tracks crafted for your specific mood, tempo, and purpose.</p>
         </div>
         <div class="service-item">
             <div class="service-num">02</div>
             <h3>Sync Licensing</h3>
-            <p>License existing tracks for film, video, games, podcasts, and commercial projects.</p>
+            <p>License existing tracks for film, video, games, podcasts, and commercial projects. BMI registered.</p>
         </div>
         <div class="service-item">
             <div class="service-num">03</div>
             <h3>Collaboration</h3>
-            <p>Open to co-writing, remixes, and creative partnerships with artists and brands.</p>
+            <p>Open to co-writing, remixes, and creative partnerships with artists and labels.</p>
         </div>
     </div>
 
@@ -960,9 +981,8 @@
     <div class="contact-grid">
 
         <div class="contact-left reveal">
-            <span class="section-label">Contact</span>
-            <h2>Let's create<br><em>together</em></h2>
-            <p>Available for custom compositions, sync licensing, collaborative projects, and live sets. Reach out and let's talk about your project.</p>
+            <h2>Let's work<br><em>together</em></h2>
+            <p>Available for sync licensing, custom compositions, and creative partnerships. Reach out with your project details.</p>
             <div class="contact-details">
                 <div class="contact-detail">
                     <span class="cd-label">Email</span>
@@ -970,37 +990,43 @@
                 </div>
                 <div class="contact-detail">
                     <span class="cd-label">Spotify</span>
-                    <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="cd-val">NKN on Spotify</a>
+                    <div style="display:flex;flex-direction:column;gap:0.5rem">
+                        <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="cd-val">NKN</a>
+                        <a href="https://open.spotify.com/artist/3uNf2vXwmfuE3S8Q4nD8ui" target="_blank" rel="noopener" class="cd-val">sound of nunki</a>
+                        <a href="https://open.spotify.com/artist/6OQZ3RTT4YEGlxZnD7aC3q" target="_blank" rel="noopener" class="cd-val">enkayen</a>
+                        <a href="https://open.spotify.com/album/3JElcTeFIUUR6Dqgkp7sxV" target="_blank" rel="noopener" class="cd-val">Dancing Room Only</a>
+                    </div>
                 </div>
             </div>
             <div class="socials">
+                <a href="https://www.instagram.com/nerdykidnick/" target="_blank" rel="noopener" class="social-a">Instagram</a>
                 <a href="https://x.com/NerdyKidNick" target="_blank" rel="noopener" class="social-a">Twitter / X</a>
-                <a href="https://www.linkedin.com/in/nickthibaut/" target="_blank" rel="noopener" class="social-a">LinkedIn</a>
                 <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="social-a">Spotify</a>
+                <a href="https://www.linkedin.com/in/nickthibaut/" target="_blank" rel="noopener" class="social-a">LinkedIn</a>
             </div>
         </div>
 
-        <div class="reveal reveal-delay-1">
+        <div class="reveal reveal-d1">
             <form class="contact-form" method="post" action="https://formspree.io/f/xzzpqgpl" id="contact-form">
                 <div class="form-row">
                     <div class="field">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Your name" />
+                        <input type="text" name="name" id="name" placeholder="Your name" required />
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="your@email.com" />
+                        <input type="email" name="email" id="email" placeholder="your@email.com" required />
                     </div>
                 </div>
                 <div class="field">
                     <label for="subject">Inquiry Type</label>
-                    <input type="text" name="subject" id="subject" placeholder="Custom composition, licensing, collaboration…" />
+                    <input type="text" name="subject" id="subject" placeholder="Sync licensing, custom composition, collaboration…" />
                 </div>
                 <div class="field">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="6" placeholder="Tell me about your project…"></textarea>
+                    <textarea name="message" id="message" rows="6" placeholder="Tell me about your project…" required></textarea>
                 </div>
-                <button type="submit" class="btn-fill" style="width:fit-content">Send Message</button>
+                <button type="submit" class="btn-fill" style="width: fit-content">Send Message</button>
             </form>
         </div>
 
@@ -1020,7 +1046,7 @@
         nav.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
 
-    // Reveal on scroll
+    // Scroll reveals
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(e => {
             if (e.isIntersecting) {
@@ -1052,11 +1078,11 @@
                 btn.textContent = 'Sent ✓';
                 setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3500);
             } else {
-                btn.textContent = 'Error — Try Again';
+                btn.textContent = 'Error — try again';
                 btn.disabled = false;
             }
         } catch {
-            btn.textContent = 'Error — Try Again';
+            btn.textContent = 'Error — try again';
             btn.disabled = false;
         }
     });
