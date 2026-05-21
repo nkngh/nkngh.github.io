@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m http.server 8765)",
+      "PowerShell(Start-Process python -ArgumentList \"-m\", \"http.server\", \"8765\" -WorkingDirectory \"i:\\\\nkngh.github.io\" -WindowStyle Hidden)",
+      "PowerShell($job = Start-Job -ScriptBlock { python -m http.server 8765 } -WorkingDirectory \"i:\\\\nkngh.github.io\"; Start-Sleep 2; netstat -ano | Select-String \"8765\")",
+      "PowerShell(python --version)",
+      "PowerShell(node --version)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8765/)",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "Skill(impeccable)",
+      "Skill(impeccable:*)",
+      "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\load-context.mjs\")",
+      "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\critique-storage.mjs\" slug \"i:/nkngh.github.io/index.html\")",
+      "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json \"i:/nkngh.github.io/index.html\")"
+    ]
+  }
+}

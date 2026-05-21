@@ -1,0 +1,235 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "NKN" [ref=e3] [cursor=pointer]:
+      - /url: "#hero"
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Bio" [ref=e6] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e7]:
+        - link "Music" [ref=e8] [cursor=pointer]:
+          - /url: "#music"
+      - listitem [ref=e9]:
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]: Composer • Sound Designer • Ambient Artist
+      - img "NKN" [ref=e16]
+      - heading "NKN" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Lofi & Ambient Soundscapes
+      - generic [ref=e19]:
+        - link "Listen Now" [ref=e20] [cursor=pointer]:
+          - /url: "#music"
+        - link "Book & Collaborate" [ref=e21] [cursor=pointer]:
+          - /url: "#contact"
+    - generic [ref=e23]: Scroll
+  - generic [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: About
+      - heading "Crafting worlds through sound" [level=2] [ref=e29]:
+        - text: Crafting worlds
+        - emphasis [ref=e30]: through sound
+      - paragraph [ref=e31]: NKN is an independent composer and sound designer specializing in lofi, ambient, and atmospheric soundscapes — music engineered for deep focus, creative flow, and quiet moments of reflection.
+      - paragraph [ref=e32]: Drawing inspiration from the liminal spaces between waking and sleep, NKN's compositions weave organic textures with subtle electronic elements to create sound environments that feel both intimate and expansive.
+      - blockquote [ref=e33]: "\"Music that exists in the space between thought and feeling.\""
+      - generic [ref=e34]:
+        - generic [ref=e35]: Lofi
+        - generic [ref=e36]: Ambient
+        - generic [ref=e37]: Chillhop
+        - generic [ref=e38]: Instrumental
+        - generic [ref=e39]: Atmospheric
+    - generic [ref=e40]:
+      - generic [ref=e41]: Press Kit
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - generic [ref=e44]: ∞
+          - generic [ref=e45]: Hours Streamed
+        - generic [ref=e46]:
+          - generic [ref=e47]: 10+
+          - generic [ref=e48]: Original Tracks
+        - generic [ref=e49]:
+          - generic [ref=e50]: 3+
+          - generic [ref=e51]: Platforms
+        - generic [ref=e52]:
+          - generic [ref=e53]: "2024"
+          - generic [ref=e54]: Active Since
+      - generic [ref=e55]:
+        - paragraph [ref=e56]: "\"Immersive soundscapes that transport you somewhere quieter.\""
+        - text: — Press
+      - link "Request Full Press Kit" [ref=e57] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e61]: Discography
+        - heading "Featured Tracks" [level=2] [ref=e62]:
+          - text: Featured
+          - emphasis [ref=e63]: Tracks
+      - link "View all on Spotify ↗" [ref=e64] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - iframe [ref=e68]:
+          - generic [active] [ref=f1e1]:
+            - generic [ref=f1e4]:
+              - generic [ref=f1e5]:
+                - img "NKN cover" [ref=f1e8] [cursor=pointer]
+                - button "Play on Spotify" [ref=f1e10] [cursor=pointer]:
+                  - img [ref=f1e11]
+                - generic [ref=f1e13]:
+                  - heading "NKN" [level=1] [ref=f1e14]:
+                    - link "NKN" [ref=f1e18] [cursor=pointer]:
+                      - /url: ""
+                  - heading "Top tracks" [level=2] [ref=f1e20]:
+                    - link "Top tracks" [ref=f1e25] [cursor=pointer]:
+                      - /url: ""
+                - list "Tags" [ref=f1e27]:
+                  - generic "Preview" [ref=f1e28]
+                - generic [ref=f1e30]:
+                  - generic [ref=f1e31]:
+                    - button "Previous" [disabled] [ref=f1e32]:
+                      - img [ref=f1e34]
+                    - button "Next" [disabled] [ref=f1e36]:
+                      - img [ref=f1e38]
+                  - button "More" [ref=f1e40] [cursor=pointer]:
+                    - img [ref=f1e41]
+                  - button "Play" [disabled] [ref=f1e44]:
+                    - img [ref=f1e45]
+              - list "Track list" [ref=f1e50]:
+                - listitem [ref=f1e51]:
+                  - button "Play track" [ref=f1e53] [cursor=pointer]:
+                    - generic [ref=f1e54]: "1"
+                  - heading "Empathy For Sitting" [level=3] [ref=f1e55]
+                  - heading "December50, NKN, Picture Talk" [level=4] [ref=f1e56]
+                  - generic [ref=f1e57]: 01:55
+                - listitem [ref=f1e58]:
+                  - button "Play track" [ref=f1e60] [cursor=pointer]:
+                    - generic [ref=f1e61]: "2"
+                  - heading "whispers from the void" [level=3] [ref=f1e62]
+                  - heading "vimef, NKN" [level=4] [ref=f1e63]
+                  - generic [ref=f1e64]: 02:01
+                - listitem [ref=f1e65]:
+                  - button "Play track" [ref=f1e67] [cursor=pointer]:
+                    - generic [ref=f1e68]: "3"
+                  - heading "when everything else changes" [level=3] [ref=f1e69]
+                  - heading "NKN, Moon-uh" [level=4] [ref=f1e70]
+                  - generic [ref=f1e71]: 02:58
+                - listitem [ref=f1e72]:
+                  - button "Play track" [ref=f1e74] [cursor=pointer]:
+                    - generic [ref=f1e75]: "4"
+                  - heading "Reminiscing" [level=3] [ref=f1e76]
+                  - heading "vimef, NKN" [level=4] [ref=f1e77]
+                  - generic [ref=f1e78]: 02:29
+                - listitem [ref=f1e79]:
+                  - button "Play track" [ref=f1e81] [cursor=pointer]:
+                    - generic [ref=f1e82]: "5"
+                  - heading "Thinking Of You" [level=3] [ref=f1e83]
+                  - heading "NKN" [level=4] [ref=f1e84]
+                  - generic [ref=f1e85]: 03:17
+                - listitem [ref=f1e86]:
+                  - button "Play track" [ref=f1e88] [cursor=pointer]:
+                    - generic [ref=f1e89]: "6"
+                  - heading "See You In The Aisle" [level=3] [ref=f1e90]
+                  - heading "vimef, NKN" [level=4] [ref=f1e91]
+                  - generic [ref=f1e92]: 02:56
+                - listitem [ref=f1e93]:
+                  - button "Play track" [ref=f1e95] [cursor=pointer]:
+                    - generic [ref=f1e96]: "7"
+                  - heading "Her" [level=3] [ref=f1e97]
+                  - heading "NKN" [level=4] [ref=f1e98]
+                  - generic [ref=f1e99]: 02:33
+                - listitem [ref=f1e100]:
+                  - button "Play track" [ref=f1e102] [cursor=pointer]:
+                    - generic [ref=f1e103]: "8"
+                  - heading "her in hues" [level=3] [ref=f1e104]
+                  - heading "vimef, ElaZ, NKN" [level=4] [ref=f1e105]
+                  - generic [ref=f1e106]: 02:02
+                - listitem [ref=f1e107]:
+                  - button "Play track" [ref=f1e109] [cursor=pointer]:
+                    - generic [ref=f1e110]: "9"
+                  - heading "Yumi" [level=3] [ref=f1e111]
+                  - heading "NKN" [level=4] [ref=f1e112]
+                  - generic [ref=f1e113]: 03:03
+                - listitem [ref=f1e114]:
+                  - button "Play track" [ref=f1e116] [cursor=pointer]:
+                    - generic [ref=f1e117]: "10"
+                  - heading "Tteokbokki" [level=3] [ref=f1e118]
+                  - heading "NKN" [level=4] [ref=f1e119]
+                  - generic [ref=f1e120]: 02:41
+            - alert [ref=f1e121]
+        - generic [ref=e69]:
+          - generic [ref=e70]: Preview · In The Deep
+          - generic [ref=e71]: Your browser does not support audio.
+      - generic [ref=e73]:
+        - link "01 In The Deep Ambient · Meditation ↗" [ref=e74] [cursor=pointer]:
+          - /url: https://open.spotify.com/track/6JVPcWIm7SzwYrNvxWtpDw
+          - generic [ref=e75]: "01"
+          - generic [ref=e76]:
+            - generic [ref=e77]: In The Deep
+            - text: Ambient · Meditation
+          - generic [ref=e78]: ↗
+        - generic [ref=e79]:
+          - generic [ref=e80]: —
+          - generic [ref=e81]:
+            - generic [ref=e82]: More tracks on Spotify
+            - text: Full discography available
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]: "01"
+        - heading "Custom Compositions" [level=3] [ref=e86]
+        - paragraph [ref=e87]: Tailored ambient tracks crafted for your specific mood, tempo, and purpose.
+      - generic [ref=e88]:
+        - generic [ref=e89]: "02"
+        - heading "Sync Licensing" [level=3] [ref=e90]
+        - paragraph [ref=e91]: License existing tracks for film, video, games, podcasts, and commercial projects.
+      - generic [ref=e92]:
+        - generic [ref=e93]: "03"
+        - heading "Collaboration" [level=3] [ref=e94]
+        - paragraph [ref=e95]: Open to co-writing, remixes, and creative partnerships with artists and brands.
+  - generic [ref=e97]:
+    - generic [ref=e98]:
+      - generic [ref=e99]: Contact
+      - heading "Let's create together" [level=2] [ref=e100]:
+        - text: Let's create
+        - emphasis [ref=e101]: together
+      - paragraph [ref=e102]: Available for custom compositions, sync licensing, collaborative projects, and live sets. Reach out and let's talk about your project.
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: Email
+          - link "nkn_music@outlook.com" [ref=e106] [cursor=pointer]:
+            - /url: mailto:nkn_music@outlook.com
+        - generic [ref=e107]:
+          - generic [ref=e108]: Spotify
+          - link "NKN on Spotify" [ref=e109] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+      - generic [ref=e110]:
+        - link "Twitter / X" [ref=e111] [cursor=pointer]:
+          - /url: https://x.com/NerdyKidNick
+        - link "LinkedIn" [ref=e112] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/nickthibaut/
+        - link "Spotify" [ref=e113] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: Name
+          - textbox "Name" [ref=e119]:
+            - /placeholder: Your name
+        - generic [ref=e120]:
+          - generic [ref=e121]: Email
+          - textbox "Email" [ref=e122]:
+            - /placeholder: your@email.com
+      - generic [ref=e123]:
+        - generic [ref=e124]: Inquiry Type
+        - textbox "Inquiry Type" [ref=e125]:
+          - /placeholder: Custom composition, licensing, collaboration…
+      - generic [ref=e126]:
+        - generic [ref=e127]: Message
+        - textbox "Message" [ref=e128]:
+          - /placeholder: Tell me about your project…
+      - button "Send Message" [ref=e129] [cursor=pointer]
+  - contentinfo [ref=e130]:
+    - link "NKN" [ref=e131] [cursor=pointer]:
+      - /url: "#hero"
+    - generic [ref=e132]: © 2025 NKN Music. All rights reserved.
