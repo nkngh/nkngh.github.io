@@ -628,3 +628,14 @@ Error
 [19606655ms] [WARNING] The resource https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/cmg/1 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/ov2/av0/rch/1h8qd/0x4AAAAAAAIkKY4HiHOeDV-W/light/fbE/api/normal?lang=auto:0
 [19680281ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
 [19759206ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19787526ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19787921ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19788076ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19788221ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19788366ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19837430ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19838035ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19838165ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19838312ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19838618ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
+[19838767ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://musicbythibaut.com/:0
