@@ -1,0 +1,78 @@
+- generic [ref=e3]:
+  - region "top of page"
+  - generic [ref=e10]:
+    - banner [ref=e11]:
+      - navigation "Site" [ref=e17]:
+        - list [ref=e18]:
+          - listitem [ref=e19] [cursor=pointer]:
+            - link "HOME" [ref=e20]:
+              - /url: https://www.thibautgarcia-guitarist.com
+              - paragraph [ref=e23]: HOME
+          - listitem [ref=e24] [cursor=pointer]:
+            - link "BIOGRAPHY" [ref=e25]:
+              - /url: https://www.thibautgarcia-guitarist.com/biography
+              - paragraph [ref=e28]: BIOGRAPHY
+          - listitem [ref=e29] [cursor=pointer]:
+            - link "DISCOGRAPHY" [ref=e30]:
+              - /url: https://www.thibautgarcia-guitarist.com/discography
+              - paragraph [ref=e33]: DISCOGRAPHY
+          - listitem [ref=e34] [cursor=pointer]:
+            - link "CONCERTS" [ref=e35]:
+              - /url: https://www.thibautgarcia-guitarist.com/concerts
+              - paragraph [ref=e38]: CONCERTS
+          - listitem [ref=e39] [cursor=pointer]:
+            - link "MEDIA" [ref=e40]:
+              - /url: https://www.thibautgarcia-guitarist.com/media
+              - paragraph [ref=e43]: MEDIA
+          - listitem [ref=e44] [cursor=pointer]:
+            - link "CONTACT" [ref=e45]:
+              - /url: https://www.thibautgarcia-guitarist.com/contact
+              - paragraph [ref=e48]: CONTACT
+    - main [ref=e50]:
+      - generic [ref=e55]:
+        - generic:
+          - generic:
+            - generic:
+              - region "content changes on hover" [ref=e60]
+              - generic [ref=e72]:
+                - generic:
+                  - generic:
+                    - heading "Thibaut Garcia" [level=2] [ref=e74]:
+                      - link "Thibaut Garcia" [ref=e75] [cursor=pointer]:
+                        - /url: https://www.thibautgarcia-guitarist.com
+                    - paragraph [ref=e76]: Hailed as ‘the new face of classical guitar’ after winning every major international guitar competition within the space of just a few months, Thibaut Garcia has had the critics reaching for new superlatives, as well as comparisons with the great guitarists of the past.
+    - contentinfo [ref=e82]:
+      - generic [ref=e86]:
+        - generic:
+          - generic:
+            - list "Social Bar" [ref=e88]:
+              - listitem [ref=e89]:
+                - link [ref=e90] [cursor=pointer]:
+                  - /url: https://www.facebook.com/profile.php?id=624692404363612
+              - listitem [ref=e91]:
+                - link [ref=e92] [cursor=pointer]:
+                  - /url: https://www.instagram.com/thibautgarciaguitar/
+              - listitem [ref=e93]:
+                - link [ref=e94] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCNfnrDKDYNRo5DA8kiRrFYQ
+              - listitem [ref=e95]:
+                - link "Black Deezer Icon" [ref=e96] [cursor=pointer]:
+                  - /url: https://www.deezer.com/artist/7184076
+                  - img "Black Deezer Icon" [ref=e97]
+              - listitem [ref=e98]:
+                - link "Black Spotify Icon" [ref=e99] [cursor=pointer]:
+                  - /url: https://open.spotify.com/artist/6ZgXLDSjEsWxgYP8MeLS1t
+                  - img "Black Spotify Icon" [ref=e100]
+              - listitem [ref=e101]:
+                - link "Black Apple Music Icon" [ref=e102] [cursor=pointer]:
+                  - /url: https://music.apple.com/artist/thibaut-garcia/1139255395
+                  - img "Black Apple Music Icon" [ref=e103]
+            - generic:
+              - paragraph [ref=e104]:
+                - generic [ref=e106]: © Copyright Thibaut Garcia 2025
+                - generic [ref=e108]: All Rights Reserved
+              - paragraph [ref=e109]:
+                - link "Site credits" [ref=e114] [cursor=pointer]:
+                  - /url: https://nadiawadas.com
+              - paragraph [ref=e115]
+  - region "bottom of page"
