@@ -1,0 +1,9 @@
+[     507ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[     520ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[     521ms] [ERROR] Failed to load resource: net::ERR_ADDRESS_INVALID @ https://o22381.ingest.us.sentry.io/api/4505164808585216/envelope/?sentry_version=7&sentry_key=4cc707ab12ea4779b417479c0550a5cb&sentry_client=sentry.javascript.nextjs%2F10.45.0:0
+[     526ms] [WARNING] com.microsoft.playready.recommendation: Internal testing is highly recommended prior to enabling PlayReady playback on Windows. Failure to do so may cause application instability or playback errors.
+
+Before generating a request, setServerCertificate() must be called with a valid server certificate. Otherwise, generateRequest() could fail. @ https://embed-cdn.spotifycdn.com/_next/static/chunks/3327.b77ca16d39519caf.js:0
+[     526ms] [WARNING] com.microsoft.playready.recommendation.3000: Internal testing is highly recommended prior to enabling PlayReady playback on Windows. Failure to do so may cause application instability or playback errors.
+
+Before generating a request, setServerCertificate() must be called with a valid server certificate. Otherwise, generateRequest() could fail. @ https://embed-cdn.spotifycdn.com/_next/static/chunks/3327.b77ca16d39519caf.js:0

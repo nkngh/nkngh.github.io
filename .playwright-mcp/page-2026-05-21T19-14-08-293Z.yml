@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "NKN" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Music" [ref=e6] [cursor=pointer]:
+          - /url: music.html
+      - listitem [ref=e7]:
+        - link "Bio" [ref=e8] [cursor=pointer]:
+          - /url: bio.html
+      - listitem [ref=e9]:
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: contact.html
+  - dialog "Site navigation":
+    - link "Music":
+      - /url: music.html
+    - link "Bio":
+      - /url: bio.html
+    - link "Contact":
+      - /url: contact.html
+  - banner [ref=e11]:
+    - heading "Get in touch" [level=1] [ref=e12]:
+      - text: Get
+      - emphasis [ref=e13]: in touch
+    - paragraph [ref=e14]: Sync licensing, collaboration, and creative partnerships
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - heading "Let's work together" [level=2] [ref=e18]:
+        - text: Let's work
+        - emphasis [ref=e19]: together
+      - paragraph [ref=e20]: Available for sync licensing and creative partnerships. Reach out with your project details.
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]: Email
+          - link "nkn_music@outlook.com" [ref=e24] [cursor=pointer]:
+            - /url: mailto:nkn_music@outlook.com
+        - generic [ref=e25]:
+          - generic [ref=e26]: Spotify
+          - generic [ref=e27]:
+            - link "NKN" [ref=e28] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - link "sound of nunki" [ref=e29] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/3uNf2vXwmfuE3S8Q4nD8ui
+            - link "enkayen" [ref=e30] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/6OQZ3RTT4YEGlxZnD7aC3q
+            - link "Dancing Room Only" [ref=e31] [cursor=pointer]:
+              - /url: https://open.spotify.com/album/3JElcTeFIUUR6Dqgkp7sxV
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: Name
+          - textbox "Name" [ref=e37]:
+            - /placeholder: Your name
+        - generic [ref=e38]:
+          - generic [ref=e39]: Email
+          - textbox "Email" [ref=e40]:
+            - /placeholder: your@email.com
+      - generic [ref=e41]:
+        - generic [ref=e42]: Inquiry Type
+        - textbox "Inquiry Type" [ref=e43]:
+          - /placeholder: Sync licensing, collaboration, other…
+      - generic [ref=e44]:
+        - generic [ref=e45]: Message
+        - textbox "Message" [ref=e46]:
+          - /placeholder: Tell me about your project…
+      - button "Send Message" [ref=e47] [cursor=pointer]
+  - contentinfo [ref=e48]:
+    - link "NKN" [ref=e49] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e50]: © 2026 NKN Music. All rights reserved.

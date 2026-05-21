@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Music — NKN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NKN's full catalog: lofi, ambient, and multi-genre tracks across four Spotify projects. 400K+ streams. Sync-ready." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ─── MUSIC CONTENT ───────────────────── */
+        #music-content {
+            background: var(--walnut);
+            padding: 7rem 8%;
+        }
+
+        .music-grid {
+            max-width: 1100px;
+            margin: 0 auto 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .embed-frame {
+            border: 1px solid var(--dark-border);
+            overflow: hidden;
+        }
+
+        .embed-frame iframe {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+
+        .local-player {
+            margin-top: 1.25rem;
+            padding: 1.5rem;
+            border: 1px solid var(--dark-border);
+            background: rgba(255,255,255,0.02);
+        }
+
+        .local-player-track {
+            font-family: var(--font-d);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+            font-style: normal;
+            color: rgba(237, 242, 230, 0.5);
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .local-player audio {
+            width: 100%;
+            accent-color: var(--amber);
+        }
+
+        /* Track list */
+        .track-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .track-row {
+            display: flex;
+            align-items: baseline;
+            gap: 1.25rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--dark-border);
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .track-row:first-of-type { border-top: 1px solid var(--dark-border); }
+        .track-row:hover {
+            background: rgba(143, 175, 130, 0.06);
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin: 0 -0.5rem;
+        }
+
+        .track-n {
+            font-family: var(--font-d);
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(237, 242, 230, 0.2);
+            min-width: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .track-info { flex: 1; min-width: 0; }
+
+        .track-title {
+            font-family: var(--font-d);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--cream);
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .track-streams {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: rgba(237, 242, 230, 0.3);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        /* Projects section */
+        #projects {
+            background: var(--espresso);
+            padding: 7rem 8%;
+        }
+
+        .projects-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .projects-hdr {
+            margin-bottom: 4rem;
+        }
+
+        .projects-hdr h2 {
+            font-family: var(--font-d);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            color: var(--cream);
+            line-height: 1.05;
+        }
+
+        .projects-hdr h2 em {
+            font-style: normal;
+            font-weight: 300;
+            color: var(--amber);
+            display: block;
+        }
+
+        .projects-hdr p {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: rgba(237, 242, 230, 0.4);
+            font-weight: 300;
+            margin-top: 1rem;
+            max-width: 52ch;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--dark-border);
+            text-decoration: none;
+        }
+        .project-row:first-child { border-top: 1px solid var(--dark-border); }
+        .project-row:hover .project-name { color: var(--amber); }
+        .project-row:hover .project-arrow { opacity: 1; color: var(--amber); }
+
+        .project-name {
+            font-family: var(--font-d);
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            font-weight: 700;
+            color: var(--cream);
+            transition: color 0.2s;
+        }
+
+        .project-meta {
+            font-size: 0.78rem;
+            font-weight: 300;
+            color: rgba(237, 242, 230, 0.35);
+            letter-spacing: 0.04em;
+        }
+
+        .project-arrow {
+            font-size: 1.5rem;
+            color: rgba(237, 242, 230, 0.2);
+            transition: opacity 0.2s, color 0.2s;
+            flex-shrink: 0;
+        }
+
+        /* Sync note */
+        .sync-note {
+            max-width: 1100px;
+            margin: 6rem auto 0;
+            padding: 2.5rem 3rem;
+            border: 1px solid var(--dark-border);
+            background: rgba(143, 175, 130, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .sync-note p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(237, 242, 230, 0.55);
+            font-weight: 300;
+            max-width: 52ch;
+        }
+
+        .sync-note p strong {
+            color: var(--amber);
+            font-weight: 600;
+        }
+
+        /* ─── RESPONSIVE ──────────────────────── */
+        @media (max-width: 920px) {
+            #music-content, #projects { padding: 5rem 5%; }
+            .music-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .sync-note { padding: 2rem; flex-direction: column; }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav id="nav">
+    <a href="index.html" class="nav-logo">NKN</a>
+    <ul class="nav-links">
+        <li><a href="music.html" class="active">Music</a></li>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Site navigation">
+    <a href="music.html" class="active">Music</a>
+    <a href="bio.html">Bio</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<!-- ─── PAGE HEADER ────────────────────── -->
+<header class="page-header">
+    <div class="page-header-glow"></div>
+    <h1>Top<br><em>Tracks</em></h1>
+    <p class="page-header-sub">NKN &mdash; full catalog &amp; streaming stats</p>
+</header>
+
+<!-- ─── MUSIC ──────────────────────────── -->
+<section id="music-content">
+
+    <div class="music-grid">
+        <div class="reveal">
+            <div class="embed-frame">
+                <iframe
+                    src="https://open.spotify.com/embed/artist/1kmMLFK7dXp7dGT42soMrG?utm_source=generator&theme=0"
+                    height="380"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="local-player">
+                <span class="local-player-track">In The Deep</span>
+                <audio controls>
+                    <source src="audio/inthedeep.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <div class="reveal reveal-d1">
+            <div class="track-list">
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">01</span>
+                    <div class="track-info"><span class="track-title">whispers from the void</span></div>
+                    <span class="track-streams">155,416</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">02</span>
+                    <div class="track-info"><span class="track-title">Reminiscing</span></div>
+                    <span class="track-streams">78,201</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">03</span>
+                    <div class="track-info"><span class="track-title">Empathy For Sitting</span></div>
+                    <span class="track-streams">46,342</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">04</span>
+                    <div class="track-info"><span class="track-title">when everything else changes</span></div>
+                    <span class="track-streams">26,806</span>
+                </a>
+                <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="track-row">
+                    <span class="track-n">05</span>
+                    <div class="track-info"><span class="track-title">Thinking Of You</span></div>
+                    <span class="track-streams">26,084</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sync-note reveal">
+        <p><strong>Sync-ready catalog.</strong> All tracks BMI registered and available for licensing in film, TV, games, podcasts, and commercial projects.</p>
+        <a href="contact.html" class="btn-fill">Get in touch</a>
+    </div>
+
+</section>
+
+<!-- ─── PROJECTS ────────────────────────── -->
+<section id="projects">
+    <div class="projects-inner">
+        <div class="projects-hdr reveal">
+            <h2>All<br><em>Projects</em></h2>
+            <p>NKN releases across multiple aliases and collaborative projects. One catalog, many sounds.</p>
+        </div>
+
+        <div class="projects-list reveal reveal-d1">
+            <a href="https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG" target="_blank" rel="noopener" class="project-row">
+                <div>
+                    <div class="project-name">NKN</div>
+                    <div class="project-meta">Lofi &middot; Ambient &middot; Primary catalog</div>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+            <a href="https://open.spotify.com/artist/3uNf2vXwmfuE3S8Q4nD8ui" target="_blank" rel="noopener" class="project-row">
+                <div>
+                    <div class="project-name">sound of nunki</div>
+                    <div class="project-meta">Spotify</div>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+            <a href="https://open.spotify.com/artist/6OQZ3RTT4YEGlxZnD7aC3q" target="_blank" rel="noopener" class="project-row">
+                <div>
+                    <div class="project-name">enkayen</div>
+                    <div class="project-meta">Spotify</div>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+            <a href="https://open.spotify.com/album/3JElcTeFIUUR6Dqgkp7sxV" target="_blank" rel="noopener" class="project-row">
+                <div>
+                    <div class="project-name">Dancing Room Only</div>
+                    <div class="project-meta">Spotify</div>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────── -->
+<footer>
+    <a href="index.html" class="foot-logo">NKN</a>
+    <span class="foot-copy">&copy; 2026 NKN Music. All rights reserved.</span>
+</footer>
+
+<script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    const toggle = document.querySelector('.nav-toggle');
+    const drawer = document.getElementById('nav-drawer');
+    toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+        drawer.classList.toggle('open', !open);
+        document.body.style.overflow = open ? '' : 'hidden';
+    });
+    drawer.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open menu');
+            drawer.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && drawer.classList.contains('open')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open menu');
+            drawer.classList.remove('open');
+            document.body.style.overflow = '';
+            toggle.focus();
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

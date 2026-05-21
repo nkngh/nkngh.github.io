@@ -1,0 +1,64 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "NKN" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Music" [ref=e6] [cursor=pointer]:
+          - /url: music.html
+      - listitem [ref=e7]:
+        - link "Bio" [ref=e8] [cursor=pointer]:
+          - /url: bio.html
+      - listitem [ref=e9]:
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: contact.html
+  - dialog "Site navigation":
+    - link "Music":
+      - /url: music.html
+    - link "Bio":
+      - /url: bio.html
+    - link "Contact":
+      - /url: contact.html
+  - banner [ref=e11]:
+    - heading "About NKN" [level=1] [ref=e12]:
+      - emphasis [ref=e13]: About
+      - text: NKN
+    - paragraph [ref=e14]: Bio, press kit, and licensing credentials
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - heading "Quiet moments in a loud world" [level=2] [ref=e18]:
+        - text: Quiet moments
+        - text: in a
+        - emphasis [ref=e19]: loud world
+      - paragraph [ref=e20]: NKN is a lofi and ambient producer crafting introspective soundscapes rooted in a lifelong love of music. Raised in a musical household, his productions blend warmth and melancholy into music that feels like a quiet moment in a loud world.
+      - paragraph [ref=e21]:
+        - text: BMI registered songwriter with placements on Spotify editorial playlists including
+        - emphasis [ref=e22]: lofi beats for insomniacs
+        - text: and
+        - emphasis [ref=e23]: minecore vol.1
+        - text: . Releasing as NKN, sound of nunki, enkayen, and Dancing Room Only.
+      - paragraph [ref=e24]: Based in Tomball, Texas. Home at LoFi Cafe Records.
+      - blockquote [ref=e25]: "\"Music that exists in the space between thought and feeling.\""
+      - link "Download Press Kit" [ref=e26] [cursor=pointer]:
+        - /url: NKN_EPK.pdf
+    - list [ref=e28]:
+      - listitem [ref=e29]: — 28K monthly listeners · 400K+ total streams across 6+ years
+      - listitem [ref=e30]:
+        - text: "— Top track:"
+        - emphasis [ref=e31]: whispers from the void
+        - text: — 155,416 streams
+      - listitem [ref=e32]:
+        - text: — Featured on
+        - emphasis [ref=e33]: lofi beats for insomniacs
+        - text: (Spotify editorial)
+      - listitem [ref=e34]:
+        - text: — Featured on
+        - emphasis [ref=e35]: minecore vol.1
+        - text: (Spotify)
+      - listitem [ref=e36]: — LoFi Cafe Records artist
+      - listitem [ref=e37]: — BMI registered songwriter
+      - listitem [ref=e38]: "— Four active Spotify projects: NKN, sound of nunki, enkayen, Dancing Room Only"
+  - contentinfo [ref=e39]:
+    - link "NKN" [ref=e40] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e41]: © 2026 NKN Music. All rights reserved.

@@ -14,7 +14,13 @@
       "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\load-context.mjs\")",
       "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\critique-storage.mjs\" slug \"i:/nkngh.github.io/index.html\")",
       "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json \"i:/nkngh.github.io/index.html\")",
-      "Bash(copy \"E:\\\\Downloads\\\\NKN_EPK-1.pdf\" \"i:\\\\nkngh.github.io\\\\NKN_EPK.pdf\")"
+      "Bash(copy \"E:\\\\Downloads\\\\NKN_EPK-1.pdf\" \"i:\\\\nkngh.github.io\\\\NKN_EPK.pdf\")",
+      "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\critique-storage.mjs\" slug \"index.html\")",
+      "Bash(node \"C:\\\\Users\\\\NKN\\\\.claude\\\\skills\\\\impeccable\\\\scripts\\\\detect.mjs\" --json \"i:\\\\nkngh.github.io\\\\index.html\")",
+      "Bash(Start-Sleep -Seconds 2)",
+      "Bash(Write-Output \"ready\")",
+      "Bash(ipconfig)",
+      "PowerShell(\\(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.InterfaceAlias -match 'Wi-Fi|Ethernet' -and $_.IPAddress -notmatch '^169' }\\).IPAddress)"
     ]
   }
 }

@@ -1,0 +1,250 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "NKN" [ref=e3] [cursor=pointer]:
+      - /url: "#hero"
+    - list [ref=e4]:
+      - listitem [ref=e5]:
+        - link "Music" [ref=e6] [cursor=pointer]:
+          - /url: "#music"
+      - listitem [ref=e7]:
+        - link "Bio" [ref=e8] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e9]:
+        - link "Contact" [ref=e10] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e11]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - img "NKN" [ref=e16]
+        - generic [ref=e17]: Tomball, Texas • Producer & Composer
+      - heading "NKN" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Multiple projects, one catalog.
+      - paragraph [ref=e20]: 28K monthly listeners · 400K+ total streams · LoFi Cafe Records
+      - generic [ref=e21]:
+        - link "Listen Now" [ref=e22] [cursor=pointer]:
+          - /url: "#music"
+        - link "Book & Collaborate" [ref=e23] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Download EPK" [ref=e24] [cursor=pointer]:
+          - /url: NKN_EPK.pdf
+    - generic [ref=e26]: Scroll
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Top Tracks" [level=2] [ref=e31]:
+        - text: Top
+        - emphasis [ref=e32]: Tracks
+      - link "Full discography on Spotify ↗" [ref=e33] [cursor=pointer]:
+        - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - iframe [ref=e37]:
+          - generic [active] [ref=f22e1]:
+            - generic [ref=f22e4]:
+              - generic [ref=f22e5]:
+                - img "NKN cover" [ref=f22e8] [cursor=pointer]
+                - button "Play on Spotify" [ref=f22e10] [cursor=pointer]:
+                  - img [ref=f22e11]
+                - generic [ref=f22e13]:
+                  - heading "NKN" [level=1] [ref=f22e14]:
+                    - link "NKN" [ref=f22e18] [cursor=pointer]:
+                      - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG?go=1&sp_cid=7615f7e3c9e48a81266665a5350f5fb2&utm_source=embed_player_p&utm_medium=desktop
+                  - heading "Top tracks" [level=2] [ref=f22e20]:
+                    - link "Top tracks" [ref=f22e25] [cursor=pointer]:
+                      - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG?go=1&sp_cid=7615f7e3c9e48a81266665a5350f5fb2&utm_source=embed_player_p&utm_medium=desktop
+                  - button "Follow" [ref=f22e28] [cursor=pointer]:
+                    - generic [ref=f22e29]: Follow
+                - list "Tags" [ref=f22e31]:
+                  - generic "Preview" [ref=f22e32]
+                - generic [ref=f22e34]:
+                  - generic [ref=f22e35]:
+                    - button "Previous" [disabled] [ref=f22e36]:
+                      - img [ref=f22e38]
+                    - button "Next" [disabled] [ref=f22e40]:
+                      - img [ref=f22e42]
+                  - button "More" [ref=f22e44] [cursor=pointer]:
+                    - img [ref=f22e45]
+                  - button "Play" [ref=f22e48] [cursor=pointer]:
+                    - img [ref=f22e49]
+              - list "Track list" [ref=f22e54]:
+                - listitem [ref=f22e55]:
+                  - button "Play track" [ref=f22e57] [cursor=pointer]:
+                    - generic [ref=f22e58]: "1"
+                  - heading "Empathy For Sitting" [level=3] [ref=f22e59]
+                  - heading "December50, NKN, Picture Talk" [level=4] [ref=f22e60]
+                  - generic [ref=f22e61]: 01:55
+                - listitem [ref=f22e62]:
+                  - button "Play track" [ref=f22e64] [cursor=pointer]:
+                    - generic [ref=f22e65]: "2"
+                  - heading "whispers from the void" [level=3] [ref=f22e66]
+                  - heading "vimef, NKN" [level=4] [ref=f22e67]
+                  - generic [ref=f22e68]: 02:01
+                - listitem [ref=f22e69]:
+                  - button "Play track" [ref=f22e71] [cursor=pointer]:
+                    - generic [ref=f22e72]: "3"
+                  - heading "when everything else changes" [level=3] [ref=f22e73]
+                  - heading "NKN, Moon-uh" [level=4] [ref=f22e74]
+                  - generic [ref=f22e75]: 02:58
+                - listitem [ref=f22e76]:
+                  - button "Play track" [ref=f22e78] [cursor=pointer]:
+                    - generic [ref=f22e79]: "4"
+                  - heading "Reminiscing" [level=3] [ref=f22e80]
+                  - heading "vimef, NKN" [level=4] [ref=f22e81]
+                  - generic [ref=f22e82]: 02:29
+                - listitem [ref=f22e83]:
+                  - button "Play track" [ref=f22e85] [cursor=pointer]:
+                    - generic [ref=f22e86]: "5"
+                  - heading "Thinking Of You" [level=3] [ref=f22e87]
+                  - heading "NKN" [level=4] [ref=f22e88]
+                  - generic [ref=f22e89]: 03:17
+                - listitem [ref=f22e90]:
+                  - button "Play track" [ref=f22e92] [cursor=pointer]:
+                    - generic [ref=f22e93]: "6"
+                  - heading "See You In The Aisle" [level=3] [ref=f22e94]
+                  - heading "vimef, NKN" [level=4] [ref=f22e95]
+                  - generic [ref=f22e96]: 02:56
+                - listitem [ref=f22e97]:
+                  - button "Play track" [ref=f22e99] [cursor=pointer]:
+                    - generic [ref=f22e100]: "7"
+                  - heading "Her" [level=3] [ref=f22e101]
+                  - heading "NKN" [level=4] [ref=f22e102]
+                  - generic [ref=f22e103]: 02:33
+                - listitem [ref=f22e104]:
+                  - button "Play track" [ref=f22e106] [cursor=pointer]:
+                    - generic [ref=f22e107]: "8"
+                  - heading "her in hues" [level=3] [ref=f22e108]
+                  - heading "vimef, ElaZ, NKN" [level=4] [ref=f22e109]
+                  - generic [ref=f22e110]: 02:02
+                - listitem [ref=f22e111]:
+                  - button "Play track" [ref=f22e113] [cursor=pointer]:
+                    - generic [ref=f22e114]: "9"
+                  - heading "Yumi" [level=3] [ref=f22e115]
+                  - heading "NKN" [level=4] [ref=f22e116]
+                  - generic [ref=f22e117]: 03:03
+                - listitem [ref=f22e118]:
+                  - button "Play track" [ref=f22e120] [cursor=pointer]:
+                    - generic [ref=f22e121]: "10"
+                  - heading "Tteokbokki" [level=3] [ref=f22e122]
+                  - heading "NKN" [level=4] [ref=f22e123]
+                  - generic [ref=f22e124]: 02:41
+            - alert [ref=f22e125]
+        - generic [ref=e39]: Preview · In The Deep
+      - generic [ref=e41]:
+        - generic [ref=e42]: Streaming Stats
+        - generic [ref=e43]:
+          - link "01 whispers from the void 155,416" [ref=e44] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - generic [ref=e45]: "01"
+            - generic [ref=e47]: whispers from the void
+            - generic [ref=e48]: 155,416
+          - link "02 Reminiscing 78,201" [ref=e49] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - generic [ref=e50]: "02"
+            - generic [ref=e52]: Reminiscing
+            - generic [ref=e53]: 78,201
+          - link "03 Empathy For Sitting 46,342" [ref=e54] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - generic [ref=e55]: "03"
+            - generic [ref=e57]: Empathy For Sitting
+            - generic [ref=e58]: 46,342
+          - link "04 when everything else changes 26,806" [ref=e59] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - generic [ref=e60]: "04"
+            - generic [ref=e62]: when everything else changes
+            - generic [ref=e63]: 26,806
+          - link "05 Thinking Of You 26,084" [ref=e64] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - generic [ref=e65]: "05"
+            - generic [ref=e67]: Thinking Of You
+            - generic [ref=e68]: 26,084
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e71]: "01"
+        - heading "Sync Licensing" [level=3] [ref=e72]
+        - paragraph [ref=e73]: License existing tracks for film, video, games, podcasts, and commercial projects. BMI registered.
+      - generic [ref=e74]:
+        - generic [ref=e75]: "02"
+        - heading "Collaboration" [level=3] [ref=e76]
+        - paragraph [ref=e77]: Open to co-writing, remixes, and creative partnerships with artists and labels.
+  - generic [ref=e79]:
+    - generic [ref=e80]:
+      - heading "Quiet moments in a loud world" [level=2] [ref=e81]:
+        - text: Quiet moments
+        - text: in a
+        - emphasis [ref=e82]: loud world
+      - paragraph [ref=e83]: NKN is a lofi and ambient producer crafting introspective soundscapes rooted in a lifelong love of music. Raised in a musical household, his productions blend warmth and melancholy into music that feels like a quiet moment in a loud world.
+      - paragraph [ref=e84]: BMI registered songwriter with placements on Spotify editorial playlists and a home at LoFi Cafe Records.
+      - blockquote [ref=e85]: "\"Music that exists in the space between thought and feeling.\""
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - generic [ref=e89]: 28K
+          - generic [ref=e90]: Monthly Listeners
+        - generic [ref=e91]:
+          - generic [ref=e92]: 400K+
+          - generic [ref=e93]: Total Streams
+        - generic [ref=e94]:
+          - generic [ref=e95]: 155K
+          - generic [ref=e96]: Top Track Streams
+        - generic [ref=e97]:
+          - generic [ref=e98]: 6+
+          - generic [ref=e99]: Years Active
+      - generic [ref=e100]: Highlights
+      - list [ref=e101]:
+        - listitem [ref=e102]:
+          - text: — Featured on
+          - emphasis [ref=e103]: lofi beats for insomniacs
+          - text: (Spotify editorial)
+        - listitem [ref=e104]:
+          - text: — Featured on
+          - emphasis [ref=e105]: minecore vol.1
+          - text: (Spotify)
+        - listitem [ref=e106]: — LoFi Cafe Records artist
+        - listitem [ref=e107]: — BMI registered songwriter
+        - listitem [ref=e108]: "— Multiple Spotify projects: NKN, sound of nunki, enkayen, Dancing Room Only"
+      - link "Download Press Kit" [ref=e109] [cursor=pointer]:
+        - /url: NKN_EPK.pdf
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - heading "Let's work together" [level=2] [ref=e113]:
+        - text: Let's work
+        - emphasis [ref=e114]: together
+      - paragraph [ref=e115]: Available for sync licensing and creative partnerships. Reach out with your project details.
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: Email
+          - link "nkn_music@outlook.com" [ref=e119] [cursor=pointer]:
+            - /url: mailto:nkn_music@outlook.com
+        - generic [ref=e120]:
+          - generic [ref=e121]: Spotify
+          - generic [ref=e122]:
+            - link "NKN" [ref=e123] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/1kmMLFK7dXp7dGT42soMrG
+            - link "sound of nunki" [ref=e124] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/3uNf2vXwmfuE3S8Q4nD8ui
+            - link "enkayen" [ref=e125] [cursor=pointer]:
+              - /url: https://open.spotify.com/artist/6OQZ3RTT4YEGlxZnD7aC3q
+            - link "Dancing Room Only" [ref=e126] [cursor=pointer]:
+              - /url: https://open.spotify.com/album/3JElcTeFIUUR6Dqgkp7sxV
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - generic [ref=e130]:
+          - generic [ref=e131]: Name
+          - textbox "Name" [ref=e132]:
+            - /placeholder: Your name
+        - generic [ref=e133]:
+          - generic [ref=e134]: Email
+          - textbox "Email" [ref=e135]:
+            - /placeholder: your@email.com
+      - generic [ref=e136]:
+        - generic [ref=e137]: Inquiry Type
+        - textbox "Inquiry Type" [ref=e138]:
+          - /placeholder: Sync licensing, custom composition, collaboration…
+      - generic [ref=e139]:
+        - generic [ref=e140]: Message
+        - textbox "Message" [ref=e141]:
+          - /placeholder: Tell me about your project…
+      - button "Send Message" [ref=e142] [cursor=pointer]
+  - contentinfo [ref=e143]:
+    - link "NKN" [ref=e144] [cursor=pointer]:
+      - /url: "#hero"
+    - generic [ref=e145]: © 2025 NKN Music. All rights reserved.
