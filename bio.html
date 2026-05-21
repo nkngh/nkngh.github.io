@@ -78,10 +78,38 @@
             font-style: normal;
         }
 
+        /* ─── PAGE HEADER PORTRAIT ───────────── */
+        .bio-header-flex {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .bio-header-portrait {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 1.5px solid rgba(143, 175, 130, 0.35);
+            flex-shrink: 0;
+        }
+
+        .bio-header-portrait img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+            filter: sepia(8%) contrast(1.04);
+        }
+
         /* ─── RESPONSIVE ──────────────────────── */
         @media (max-width: 920px) {
             #bio-content, #press-quote { padding: 5rem 5%; }
             .bio-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+            .bio-header-portrait { width: 110px; height: 110px; }
         }
     </style>
 </head>
@@ -109,8 +137,14 @@
 <!-- ─── PAGE HEADER ────────────────────── -->
 <header class="page-header">
     <div class="page-header-glow"></div>
-    <h1><em>About</em><br>Thibaut</h1>
-    <p class="page-header-sub">Bio, press kit, and licensing credentials</p>
+    <div class="bio-header-flex">
+        <div>
+            <h1><em>About</em><br>Thibaut</h1>
+        </div>
+        <div class="bio-header-portrait">
+            <img src="images/profile-head.JPG" alt="Thibaut" />
+        </div>
+    </div>
 </header>
 
 <!-- ─── BIO ────────────────────────────── -->
@@ -133,7 +167,6 @@
                 "Music that exists in the space between thought and feeling."
             </blockquote>
 
-            <a href="NKN_EPK.pdf" download="NKN_EPK.pdf" class="btn-fill" style="margin-top:1rem; display:inline-block">Download Press Kit</a>
         </div>
 
         <div class="reveal reveal-d1">

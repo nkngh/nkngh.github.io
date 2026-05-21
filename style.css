@@ -65,7 +65,7 @@ body::before {
     font-family: var(--font-d);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--amber);
+    color: var(--cream);
     text-decoration: none;
     letter-spacing: 0.06em;
     white-space: nowrap;
@@ -213,6 +213,12 @@ body::before {
     inset: 0;
     background: radial-gradient(ellipse 50% 80% at 5% 90%, rgba(143, 175, 130, 0.14) 0%, transparent 60%);
     pointer-events: none;
+}
+
+.page-header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .page-header h1 {
