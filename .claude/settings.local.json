@@ -24,7 +24,10 @@
       "Bash(grep -iE \"\\\\.\\(mp4|mov|webm|avi|mkv\\)$\")",
       "Bash(ffmpeg -version)",
       "Bash(ffmpeg -i \"i:/nkngh.github.io/A001_05141925_C002.MOV\" -vf \"scale=1280:-2\" -c:v libx264 -crf 30 -preset slow -an -movflags +faststart \"i:/nkngh.github.io/videos/lakecomo.mp4\")",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
